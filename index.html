@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classement des Collèges de France | Données Éducation Nationale</title>
+    <meta name="description" content="Explorez le classement des collèges de France basé sur les résultats du brevet. Données officielles de l'Éducation Nationale, mises à jour régulièrement.">
+    
+    <!-- Balises Open Graph pour un meilleur partage sur les réseaux sociaux -->
+    <meta property="og:title" content="Classement des Collèges de France">
+    <meta property="og:description" content="Découvrez le classement national des collèges et les statistiques de performance par région, département et ville.">
+    <meta property="og:image" content="https://classement-colleges.fr/og-image.jpg">
+    <meta property="og:url" content="https://classement-colleges.fr">
+    <meta property="og:type" content="website">
+
+    <!-- Balises Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Classement des Collèges de France">
+    <meta name="twitter:description" content="Explorez les données de performance des collèges français basées sur les résultats du brevet.">
+    <meta name="twitter:image" content="https://classement-colleges.fr/twitter-card-image.jpg">
+
+    <!-- Styles personnalisés -->
+    <style>
+        :root {
+            --primary-color: #FF4B4B;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 3rem 0;
+        }
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+        }
+        .hero-image {
+            flex: 1;
+            text-align: right;
+        }
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .feature-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .cta {
+            text-align: center;
+            margin: 3rem 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #E04040;
+        }
+        footer {
+            background-color: var(--card-bg);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+            .hero-image {
+                margin-top: 2rem;
+            }
+        }
+    </style>
+
+    <!-- Simple Analytics -->
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Classement des Collèges de France</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Trouvez le meilleur collège pour votre enfant</h2>
+                <p>Explorez notre plateforme interactive basée sur les données officielles de l'Éducation Nationale. Comparez les performances, filtrez par région, et prenez une décision éclairée pour l'avenir de votre enfant.</p>
+                <a href="/app" class="btn">Accéder à l'application</a>
+            </div>
+            <div class="hero-image">
+                <img src="/data/carte_france.png" alt="Illustration du classement des collèges" width="500" height="300">
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Classement National</h3>
+                <p>Consultez le classement complet des collèges de France basé sur les résultats du brevet.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Filtres Avancés</h3>
+                <p>Affinez votre recherche par région, département ou ville pour trouver les meilleures options près de chez vous.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>Statistiques Détaillées</h3>
+                <p>Analysez les performances de chaque établissement avec des métriques claires et comparatives.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔄</div>
+                <h3>Données à Jour</h3>
+                <p>Bénéficiez des informations les plus récentes grâce à nos mises à jour régulières des données officielles.</p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Prêt à explorer les meilleures options pour votre enfant ?</h2>
+            <p>Notre application vous permet d'accéder rapidement à toutes ces informations. Commencez dès maintenant !</p>
+            <a href="/app" class="btn">Lancer l'application</a>
+        </section>
+
+        <section id="about">
+            <h2>À propos de notre plateforme</h2>
+            <p>Notre application Streamlit exploite les données open data de l'Éducation Nationale pour vous fournir un classement complet et à jour des collèges de France. Nous avons conçu cet outil pour aider les parents à prendre des décisions éclairées concernant l'éducation de leurs enfants, en se basant sur des données objectives et officielles.</p>
+            <p>Grâce à notre interface intuitive, vous pouvez facilement naviguer à travers les classements nationaux, régionaux et départementaux, et obtenir des statistiques détaillées sur chaque établissement. Notre objectif est de rendre ces informations cruciales accessibles et compréhensibles pour tous.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Classement des Collèges de France. Toutes les données sont issues de l'Éducation Nationale.</p>
+        </div>
+    </footer>
+
+    <!-- Script pour précharger l'application Streamlit -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var iframe = document.createElement('iframe');
+            iframe.style.display = 'none';
+            iframe.src = '/app';
+            document.body.appendChild(iframe);
+        });
+    </script>
+</body>
+</html>
