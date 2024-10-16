@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classement des Collèges de France | Données Éducation Nationale</title>
     <meta name="description" content="Explorez le classement des collèges de France basé sur les résultats du brevet. Données officielles de l'Éducation Nationale, mises à jour régulièrement.">
-    
-    <!-- Balises Open Graph pour un meilleur partage sur les réseaux sociaux -->
+    <meta name="keywords" content="classement collèges, éducation nationale, résultats brevet, statistiques collège, performance établissements">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://graziellal.github.io/classement-colleges/">
+
+    <!-- Balises Open Graph pour les réseaux sociaux -->
     <meta property="og:title" content="Classement des Collèges de France">
     <meta property="og:description" content="Découvrez le classement national des collèges et les statistiques de performance par région, département et ville.">
     <meta property="og:image" content="https://graziellal.github.io/classement-colleges/images/carte_france.png">
@@ -122,6 +125,13 @@
                 margin-top: 2rem;
             }
         }
+        img[loading="lazy"] {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        img[loading="lazy"].loaded {
+            opacity: 1;
+        }
     </style>
 
     <!-- Simple Analytics -->
@@ -138,13 +148,39 @@
     <main class="container">
         <section class="hero">
             <div class="hero-content">
-                <h2>Trouvez le meilleur collège pour votre enfant</h2>
+                <h2>Trouvez le collège de votre enfant</h2>
                 <p>Explorez notre plateforme interactive basée sur les données officielles de l'Éducation Nationale. Comparez les performances, filtrez par région, et prenez une décision éclairée pour l'avenir de votre enfant.</p>
-                <a href="/app" class="btn">Accéder à l'application</a>
+                <a href="/app" class="btn">Accéder au classement</a>
             </div>
             <div class="hero-image">
-                <img src="images/carte_france.png" alt="Illustration du classement des collèges" width="500" height="300">
+                <img src="images/carte_france.png" alt="Carte des collèges de France" width="500" height="300">
             </div>
+        </section>
+
+        <section class="hero">
+            <div class="hero-image">
+                <img src="images/classement_colleges_bordeaux.png" alt="Classement des collèges de Bordeaux" width="1500" height="300">
+            </div>
+            <div class="hero-content" style="margin-left: 4rem;">
+                <h2>Comparer les collèges près de chez vous.</h2>
+                <p>Affinez votre recherche par région, département ou ville pour trouver les meilleures options près de chez vous.</p>
+            </div>
+        </section>
+
+        <section class="hero">
+            <div class="hero-content" style="margin-right: 4rem;">
+                <h2>Consulter les fiches collèges.</h2>
+                <p>Obtenez les statistiques de réussite ainsi que les informations clés du collège de votre choix.</p>
+            </div>
+            <div class="hero-image">
+                <img src="images/college_emile_combes_bdx.png" alt="Collège Émile Combes à Bordeaux" width="1500" height="300">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>À propos</h2>
+            <p>Notre site exploite les données open data de l'Éducation Nationale pour vous fournir un classement complet et à jour des collèges de France. Nous avons conçu cet outil pour aider les parents à prendre des décisions éclairées concernant l'éducation de leurs enfants, en se basant sur des données claires, objectives et officielles.</p>
+            <p>Vous pouvez facilement naviguer à travers les classements nationaux, régionaux et départementaux, et obtenir des statistiques détaillées sur chaque établissement. Notre objectif est de rendre ces informations accessibles et compréhensibles pour tous.</p>
         </section>
 
         <section class="features">
@@ -172,31 +208,17 @@
 
         <section class="cta">
             <h2>Prêt à explorer les meilleures options pour votre enfant ?</h2>
-            <p>Notre application vous permet d'accéder rapidement à toutes ces informations. Commencez dès maintenant !</p>
-            <a href="/app" class="btn">Lancer l'application</a>
+            <p>Notre application vous permet d'accéder rapidement à toutes ces informations et de comparer les collèges en fonction de critères qui vous importent le plus.</p>
+            <a href="/app" class="btn" style="margin-top: 1rem;">Découvrir le classement</a>
         </section>
-
-        <section id="about">
-            <h2>À propos de notre plateforme</h2>
-            <p>Notre application Streamlit exploite les données open data de l'Éducation Nationale pour vous fournir un classement complet et à jour des collèges de France. Nous avons conçu cet outil pour aider les parents à prendre des décisions éclairées concernant l'éducation de leurs enfants, en se basant sur des données objectives et officielles.</p>
-            <p>Grâce à notre interface intuitive, vous pouvez facilement naviguer à travers les classements nationaux, régionaux et départementaux, et obtenir des statistiques détaillées sur chaque établissement. Notre objectif est de rendre ces informations cruciales accessibles et compréhensibles pour tous.</p>
-        </section>
+        <iframe src="https://classement-colleges.fr/app" style="width: 0px; height: 0px;"></iframe>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Classement des Collèges de France. Toutes les données sont issues de l'Éducation Nationale.</p>
+            <p>&copy; 2024 Classement des Collèges. Tous droits réservés.</p>
         </div>
     </footer>
 
-    <!-- Script pour précharger l'application Streamlit -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var iframe = document.createElement('iframe');
-            iframe.style.display = 'none';
-            iframe.src = '/app';
-            document.body.appendChild(iframe);
-        });
-    </script>
 </body>
 </html>
