@@ -8,7 +8,7 @@ Ce projet a été développé dans le cadre d'une initiative visant à rendre le
 ## 🔗 Liens
 
 - **Page d'accueil** : [classement-collèges.fr](https://classement-collèges.fr)
-- **Application** : [classement-collèges.fr/app](https://classement-collèges.fr/app)
+- **Application** : [app.classement-collèges.fr](https://app.classement-collèges.fr)
 
 
 ## 👩‍💻 Technologies Utilisées
