@@ -95,6 +95,23 @@
             color: var(--primary-color);
             margin-bottom: 1rem;
         }
+        .reliability-section {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .reliability-section img {
+            width: 200px;
+            margin-right: 1rem;
+        }
+        .reliability-section p {
+            margin: 0;
+            color: var(--text-color);
+        }
         .cta {
             text-align: center;
             margin: 3rem 0;
@@ -178,15 +195,6 @@
             </div>
         </section>
 
-        <section id="about">
-            <h2>À propos</h2>
-            <p>Le site <strong>Classement des Collèges</strong> a été créé pour offrir aux parents et aux élèves un accès simple et transparent aux données officielles de l'Éducation Nationale. Grâce aux données open data, nous mettons à disposition un classement complet et actualisé des collèges de France, permettant une comparaison éclairée des établissements scolaires.</p>
-
-            <p>Nous avons conçu cet outil pour aider les parents à prendre des décisions éclairées concernant l'éducation de leurs enfants, en se basant sur des données claires, objectives et officielles. Vous pouvez facilement naviguer à travers les classements nationaux, régionaux et départementaux, et obtenir des statistiques détaillées sur chaque établissement. </p>
-
-            <p>Ce projet s'inscrit dans une démarche citoyenne et non commerciale, avec pour unique objectif de rendre ces informations accessibles et compréhensibles pour tous.</p>
-        </section>
-
         <section class="features">
             <div class="feature-card">
                 <div class="feature-icon">📊</div>
@@ -200,8 +208,8 @@
             </div>
             <div class="feature-card">
                 <div class="feature-icon">📈</div>
-                <h3>Statistiques Transparentes</h3>
-                <p>Accédez à des données claires et comparatives pour chaque établissement, basées sur des critères objectifs.</p>
+                <h3>Statistiques claires</h3>
+                <p>Accédez à des données transparentes et comparatives pour chaque établissement, basées sur des critères objectifs.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🔄</div>
@@ -210,11 +218,29 @@
             </div>
         </section>
 
+        <section id="about">
+            <h2>À propos</h2>
+            <p>Le site <strong>Classement des Collèges</strong> a été créé pour offrir aux parents et aux élèves un accès simple et transparent aux données officielles de l'Éducation Nationale. Grâce aux données open data, nous mettons à disposition un classement complet et actualisé des collèges de France, permettant une comparaison éclairée des établissements scolaires.</p>
+
+            <p>Nous avons conçu cet outil pour aider les parents à prendre des décisions éclairées concernant l'éducation de leurs enfants, en se basant sur des données claires, objectives et officielles. Vous pouvez facilement naviguer à travers les classements nationaux, régionaux et départementaux, et obtenir des statistiques détaillées sur chaque établissement. </p>
+
+            <p>Ce projet s'inscrit dans une démarche citoyenne et non commerciale, avec pour unique objectif de rendre ces informations accessibles et compréhensibles pour tous.</p>
+        </section>
+
+        <section class="reliability-section">
+            <img src="images/data_gouv_logo.svg" alt="Logo data.gouv.fr">
+            <div>
+                <p>Les informations que nous fournissons proviennent des <a href="https://data.education.gouv.fr" target="_blank" style="color: var(--primary-color); text-decoration: none;">données officielles de l'Éducation Nationale</a>, disponibles sur data.gouv.fr.</p>
+            </div>
+        </section>
+
         <section class="cta">
             <h2>Prêt à explorer les collèges près de chez vous ?</h2>
             <p>Accédez à toutes les informations essentielles pour choisir le meilleur collège pour votre enfant, en toute simplicité.</p>
             <a href="https://app.classement-colleges.fr/" class="btn" style="margin-top: 1rem;">Voir le classement</a>
         </section>
+
+
         <iframe src="https://app.classement-colleges.fr/" style="width: 0px; height: 0px;"></iframe>
     </main>
 

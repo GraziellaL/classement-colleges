@@ -7,8 +7,8 @@ Ce projet a été développé dans le cadre d'une initiative visant à rendre le
 
 ## 🔗 Liens
 
-- **Page d'accueil** : [classement-collèges.fr](https://classement-colleges.fr)
-- **Application** : [app.classement-collèges.fr](https://app.classement-colleges.fr)
+- **Page d'accueil** : [classement-colleges.fr](https://classement-colleges.fr)
+- **Application** : [app.classement-colleges.fr](https://app.classement-colleges.fr)
 - **Data gouv référencement** : [data.gouv.fr/fr/reuses/classement-des-colleges-de-france](https://www.data.gouv.fr/fr/reuses/classement-des-colleges-de-france/)
 
 
