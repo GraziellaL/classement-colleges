@@ -1,6 +1,6 @@
-# Classement des Collèges en France
+# Classement des Collèges de France
 
-Home page du site **Classement des Collèges**. Ce site exploite les données open data de l'éducation nationale sur les résultats au brevet des collèges pour fournir un classement complet des collèges en France. 
+Home page du site **Classement Collèges**. Ce site exploite les données open data de l'éducation nationale sur les résultats au brevet des collèges pour fournir un classement complet des collèges en France. 
 
 ## 🎯 Objectifs
 Ce projet a été développé dans le cadre d'une initiative visant à rendre les données éducatives plus accessibles et compréhensibles pour les parents et les élèves.
