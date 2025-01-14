@@ -232,7 +232,7 @@
         // Chargement et génération de la FAQ
         document.addEventListener('DOMContentLoaded', async function() {
             try {
-                const response = await fetch('/faq.json');
+                const response = await fetch('faq.json');
                 const data = await response.json();
                 
                 const container = document.getElementById('faqContainer');
