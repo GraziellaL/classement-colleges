@@ -198,22 +198,22 @@
             <div class="feature-card">
                 <div class="feature-icon">📊</div>
                 <h3>Classement National</h3>
-                <p>Découvrez le classement complet des collèges de France, basé sur les résultats officiels du brevet.</p>
+                <p style="font-size: 1rem; color: #666;">Découvrez le classement complet des collèges de France, basé sur les résultats officiels du brevet.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🔍</div>
                 <h3>Filtres Géographiques</h3>
-                <p>Affinez votre recherche par région, département ou ville pour trouver les meilleures options près de chez vous.</p>
+                <p style="font-size: 1rem; color: #666;">Affinez votre recherche par région, département ou ville pour trouver les meilleures options près de chez vous.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">📈</div>
                 <h3>Statistiques claires</h3>
-                <p>Accédez à des données transparentes et comparatives pour chaque établissement, basées sur des critères objectifs.</p>
+                <p style="font-size: 1rem; color: #666;">Accédez à des données transparentes et comparatives pour chaque établissement, basées sur des critères objectifs.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🔄</div>
                 <h3>Données Officielles</h3>
-                <p>Bénéficiez de mises à jour régulières basées sur les données publiques officielles fournies par l'Éducation Nationale.</p>
+                <p style="font-size: 1rem; color: #666;">Bénéficiez de mises à jour régulières basées sur les données publiques officielles fournies par l'Éducation Nationale.</p>
             </div>
         </section>
 
@@ -233,12 +233,88 @@
             </div>
         </section>
 
+
+        <!-- Section CTA principale -->
         <section class="cta">
-            <h2>Prêt à explorer les collèges près de chez vous ?</h2>
-            <p>Accédez à toutes les informations essentielles pour choisir le meilleur collège pour votre enfant, en toute simplicité.</p>
-            <a href="https://app.classement-colleges.fr/" class="btn" style="margin-top: 1rem;">Voir le classement</a>
+            <div class="container" style="text-align: center;">
+                <h2>Prêt à explorer les collèges près de chez vous ?</h2>
+                <p>Accédez à toutes les informations essentielles pour choisir le meilleur collège pour votre enfant.</p>
+                <a href="https://app.classement-colleges.fr/" class="btn">Voir le classement</a>
+            </div>
         </section>
 
+<!--        &lt;!&ndash; Section Aide &ndash;&gt;-->
+<!--        <section class="help">-->
+<!--            &lt;!&ndash; Utilisation de la même classe features qui est déjà responsive &ndash;&gt;-->
+<!--            <div class="features">-->
+<!--                <div class="feature-card">-->
+<!--                    <div class="feature-icon">📚</div>-->
+<!--                    <h3>Questions fréquentes</h3>-->
+<!--                    <p>Consultez notre FAQ pour trouver des réponses rapides à vos questions sur la méthodologie et les données.</p>-->
+<!--                    <a href="faq.html" class="btn">Voir la FAQ</a>-->
+<!--                </div>-->
+
+<!--                <div class="feature-card">-->
+<!--                    <div class="feature-icon">✉️</div>-->
+<!--                    <h3>Contactez-nous</h3>-->
+<!--                    <p>Une question spécifique ? N'hésitez pas à nous contacter directement par email.</p>-->
+<!--                    <a href="mailto:contact@classement-colleges.fr" class="btn">Nous écrire</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+
+        <section class="help-section container" style="text-align: center; max-width: 800px;">
+            <style>
+                .help-options {
+                    display: flex;
+                    justify-content: center;
+                    gap: 2rem;
+                    margin-bottom: 1rem;
+                }
+
+                .help-card {
+                    flex: 1;
+                    background: var(--card-bg);
+                    padding: 2rem;
+                    border-radius: 12px;
+                    text-decoration: none;
+                    color: var(--text-color);
+                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+
+                .help-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+                }
+
+                @media (max-width: 768px) {
+                    .help-options {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .help-card {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+            </style>
+
+            <div class="help-options">
+                <a href="faq.html" class="help-card">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">❓</div>
+                    <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Questions fréquentes</h3>
+                    <p style="font-size: 1rem; color: #666;">Consultez notre FAQ pour trouver des réponses rapides</p>
+                </a>
+
+                <a href="mailto:contact@classement-colleges.fr" class="help-card">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">✉️</div>
+                    <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Contactez-nous</h3>
+                    <p style="font-size: 1rem; color: #666;">Une question spécifique ? N'hésitez pas à nous contacter directement par email.</p>
+                </a>
+            </div>
+        </section>
         <iframe src="https://app.classement-colleges.fr/" title="Application de classement des collèges" style="width: 0px; height: 0px;"></iframe>
     </main>
 

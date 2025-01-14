@@ -1,0 +1,39 @@
+{
+  "categories": [
+    {
+      "name": "Utilisation générale",
+      "questions": [
+        {
+          "question": "Pourquoi mon collège n’apparaît-il pas dans le classement?",
+          "answer": "Le classement inclut 6680 collèges, soit la majorité des <a href='https://www.education.gouv.fr/l-education-nationale-en-chiffres-edition-2023-378943' target='_blank'>6980 collèges recensés en France</a>.<br> Cependant, certains établissements n'apparaissent pas dans notre classement. Cela peut être dû à l'absence des données nécessaires pour calculer leur score, à des informations incomplètes, ou au fait que le collège soit signalé comme fermé.<br> <i>Si votre collège n'est pas listé et que vous pensez qu'il devrait l’être, n'hésitez pas à nous contacter pour vérifier la situation.<i>"
+        },
+        {
+          "question": "Les établissements privés sont-ils inclus dans le classement ?",
+          "answer": "Oui, notre classement inclut à la fois les collèges publics et privés sous contrat, permettant une comparaison complète de tous les établissements reconnus par l'Éducation Nationale.<br> Leur rang est attribué indépendamment du fait qu’ils soient publics ou privés.<br> Il est possible d’obtenir séparément le <a href='https://app.classement-colleges.fr/?secteur_filter=Public' target='_blank'>classement des collèges publics de France</a> ou bien le <a href='https://app.classement-colleges.fr/?secteur_filter=Privé' target='_blank'>classement des collèges privés de France</a> en sélectionnant le filtre dédié dans l’application. "
+        }
+      ]
+    },
+    {
+      "name": "Méthodologie",
+      "questions": [
+        {
+          "question": "Comment les collèges sont-ils classés ?",
+          "answer": "Le classement des collèges est établi à partir de la moyenne pondérée de trois indicateurs :<br>- Le <strong>taux de réussite</strong>.<br>- La <strong>note à l’écrit</strong>.<br>- Le <strong>taux d’accès de la 6ᵉ à la 3ᵉ</strong>.<br>La pondération appliquée est de 2 pour la note à l’écrit et le taux d’accompagnement, et de 1 pour le taux de réussite.<br> Cette méthode, bien que simple, offre une vue d’ensemble cohérente et factuelle des performances éducatives des établissements."
+        }
+      ]
+    },
+    {
+      "name": "Données",
+      "questions": [
+        {
+          "question": "D'où proviennent vos données ?",
+          "answer": "Toutes nos données proviennent exclusivement des bases de données officielles de l'Éducation Nationale, disponibles sur <a href='https://data.education.gouv.fr' target='_blank'>data.gouv.fr</a>. Nous n'utilisons que des données publiques et vérifiées."
+        },
+        {
+          "question": "À quelle fréquence les données sont-elles mises à jour ?",
+          "answer": "Les données sont actualisées annuellement, dès que l'Éducation Nationale publie les nouveaux résultats sur <a href='https://data.education.gouv.fr' target='_blank'>data.gouv.fr</a>. La date de dernière mise à jour est toujours indiquée sur notre plateforme.<br> Actuellement, nous présentons le classement des collèges 2024 sur les données 2023."
+        }
+      ]
+    }
+  ]
+}
