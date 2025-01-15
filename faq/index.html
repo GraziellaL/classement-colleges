@@ -59,10 +59,6 @@
             font-size: 2.5rem;
             margin-bottom: 2rem;
         }
-        h2 {
-            color: var(--primary-color);
-            margin: 2rem 0 1rem;
-        }
         .intro {
             max-width: 800px;
             margin: 0 auto 3rem;
@@ -75,7 +71,7 @@
         .faq-category {
             margin-bottom: 2rem;
         }
-        .faq-category h3 {
+        .faq-category h2 {
             color: var(--primary-color);
             margin-bottom: 1rem;
         }
@@ -197,13 +193,13 @@
             <div class="help-options">
                 <a href="https://app.classement-colleges.fr/" class="help-card">
                     <div style="font-size: 2rem; margin-bottom: 1rem;">🏆</div>
-                    <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Accéder au classement</h3>
+                    <h2 style="margin-bottom: 1rem; color: var(--primary-color);">Accéder au classement</h2>
                     <p style="font-size: 1rem; color: #666;">Prêt à explorer les collèges près de chez vous ?</p>
                 </a>
 
                 <a href="mailto:contact@classement-colleges.fr" class="help-card">
                     <div style="font-size: 2rem; margin-bottom: 1rem;">✉️</div>
-                    <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Contactez-nous</h3>
+                    <h2 style="margin-bottom: 1rem; color: var(--primary-color);">Contactez-nous</h2>
                     <p style="font-size: 1rem; color: #666;">Si vous ne trouvez pas la réponse que vous cherchez, n'hésitez pas à nous contacter.</p>
                 </a>
             </div>
@@ -245,7 +241,7 @@
                 data.categories.forEach(category => {
                     const categorySection = document.createElement('div');
                     categorySection.className = 'faq-category';
-                    categorySection.innerHTML = `<h3>${category.name}</h3>`;
+                    categorySection.innerHTML = `<h2>${category.name}</h2>`;
                     
                     category.questions.forEach(item => {
                         const details = document.createElement('details');
