@@ -153,7 +153,7 @@
             <p>Retrouvez toutes les réponses à vos questions concernant le classement des collèges de France. </p>
         </div>
 
-        <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage" id="faqContainer">
+        <div class="faq-list" id="faqContainer">
             <!-- Le contenu sera généré dynamiquement ici -->
         </div>
 
@@ -250,15 +250,9 @@
                     
                     category.questions.forEach(item => {
                         const details = document.createElement('details');
-                        details.setAttribute('itemscope', '');
-                        details.setAttribute('itemprop', 'mainEntity');
-                        details.setAttribute('itemtype', 'https://schema.org/Question');
-                        
                         details.innerHTML = `
-                            <summary itemprop="name">${item.question}</summary>
-                            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                                <div itemprop="text">${item.answer}</div>
-                            </div>
+                            <summary>${item.question}</summary>
+                            <div>${item.answer}</div>
                         `;
                         
                         categorySection.appendChild(details);
