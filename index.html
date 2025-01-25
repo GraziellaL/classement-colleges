@@ -162,6 +162,56 @@
                 display: block;
             }
         }
+        .hamburger-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 24px;
+            height: 16px;
+            cursor: pointer;
+            margin-left: auto;
+        }
+
+        .hamburger-line {
+            width: 100%;
+            height: 2px;
+            background-color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .nav-dropdown {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 100%;
+            background-color: var(--card-bg);
+            min-width: 200px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            padding: 0.5rem 0;
+            z-index: 1000;
+        }
+
+        .nav-menu {
+            position: relative;
+        }
+
+        .nav-menu:hover .nav-dropdown {
+            display: block;
+        }
+
+        .nav-dropdown a {
+            color: var(--text-color);
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-dropdown a:hover {
+            background-color: var(--bg-color);
+            color: var(--primary-color);
+        }
     </style>
 
     <!-- Simple Analytics -->
@@ -170,8 +220,27 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
             <h1>Classement des Collèges de France</h1>
+            
+            <!-- New dropdown menu -->
+            <div class="nav-menu">
+                <div class="hamburger-menu">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="https://classement-colleges.fr/ville/bordeaux">Bordeaux</a>
+                    <a href="https://classement-colleges.fr/ville/lille">Lille</a>
+                    <a href="https://classement-colleges.fr/ville/montpellier">Montpellier</a>
+                    <a href="https://classement-colleges.fr/ville/nantes">Nantes</a>
+                    <a href="https://classement-colleges.fr/ville/nice">Nice</a>
+                    <a href="https://classement-colleges.fr/ville/paris">Paris</a>
+                    <a href="https://classement-colleges.fr/ville/strasbourg">Strasbourg</a>
+                    <a href="https://classement-colleges.fr/ville/toulouse">Toulouse</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -265,26 +334,6 @@
                 <a href="https://app.classement-colleges.fr/" class="btn">Voir le classement</a>
             </div>
         </section>
-
-<!--        &lt;!&ndash; Section Aide &ndash;&gt;-->
-<!--        <section class="help">-->
-<!--            &lt;!&ndash; Utilisation de la même classe features qui est déjà responsive &ndash;&gt;-->
-<!--            <div class="features">-->
-<!--                <div class="feature-card">-->
-<!--                    <div class="feature-icon">📚</div>-->
-<!--                    <h3>Questions fréquentes</h3>-->
-<!--                    <p>Consultez notre FAQ pour trouver des réponses rapides à vos questions sur la méthodologie et les données.</p>-->
-<!--                    <a href="index.html" class="btn">Voir la FAQ</a>-->
-<!--                </div>-->
-
-<!--                <div class="feature-card">-->
-<!--                    <div class="feature-icon">✉️</div>-->
-<!--                    <h3>Contactez-nous</h3>-->
-<!--                    <p>Une question spécifique ? N'hésitez pas à nous contacter directement par email.</p>-->
-<!--                    <a href="mailto:contact@classement-colleges.fr" class="btn">Nous écrire</a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </section>-->
 
         <section class="help-section container" style="text-align: center; max-width: 800px;">
             <style>

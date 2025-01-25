@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classement des Collèges de Bordeaux | Données Officielles</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Découvrez le classement des collèges de Bordeaux basé sur les données officielles de l'Éducation Nationale. Comparez les établissements et leurs performances.">
+    <meta name="keywords" content="classement collèges Bordeaux, collèges Bordeaux, collèges publics Bordeaux, collèges privés Bordeaux">
+    <meta name="author" content="Classement Collèges">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://classement-colleges.fr/ville/bordeaux/">
+
+    <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Classement des Collèges de Bordeaux | Données Officielles">
+    <meta property="og:description" content="Découvrez le classement des collèges de Bordeaux basé sur les données officielles de l'Éducation Nationale. Comparez les établissements et leurs performances.">
+    <meta property="og:url" content="https://classement-colleges.fr/ville/bordeaux/">
+    <meta property="og:site_name" content="Classement Collèges">
+    <meta property="og:image" content="https://classement-colleges.fr/images/school.png">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Classement des Collèges de Bordeaux | Données Officielles">
+    <meta property="twitter:description" content="Découvrez le classement des collèges de Bordeaux basé sur les données officielles de l'Éducation Nationale. Comparez les établissements et leurs performances.">
+    <meta name="twitter:image" content="https://classement-colleges.fr/images/school.png">
+    
+    <style>
+        :root {
+            --primary-color: #FF4B4B;
+            --text-color: #222;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.5;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 0 0;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            line-height: 1.3;
+            margin: 1rem;
+        }
+
+        .table-container {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        footer {
+            background-color: var(--card-bg);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin: 1rem 0;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+
+            table {
+                min-width: 100%;
+            }
+
+            th, td {
+                padding: 0.75rem 0.5rem;
+                font-size: 0.9rem;
+            }
+
+            /* Hide all columns after the 4th one */
+            th:nth-child(n+5),
+            td:nth-child(n+5) {
+                display: none;
+            }
+
+            /* Largeurs spécifiques pour les 4 premières colonnes */
+            th:nth-child(1), 
+            td:nth-child(1) {
+                width: 10%;
+                min-width: 10%;
+                max-width: 10%;
+            }
+
+            th:nth-child(2), 
+            td:nth-child(2) {
+                width: 20%;
+                min-width: 20%;
+                max-width: 20%;
+            }
+
+            th:nth-child(3), 
+            td:nth-child(3) {
+                width: 50%;
+                min-width: 50%;
+                max-width: 50%;
+            }
+
+            th:nth-child(4), 
+            td:nth-child(4) {
+                width: 20%;
+                min-width: 20%;
+                max-width: 20%;
+            }
+        }
+
+        .introduction {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .introduction p {
+            margin: 0;
+            color: var(--text-color);
+        }
+
+        @media (max-width: 768px) {
+            .introduction {
+                display: none; 
+            }
+            .explications {
+                display: none; 
+            }
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #E04040;
+        }
+        .help-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+    <!-- Simple Analytics -->
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="back-link">← Retour à l'accueil</a>
+            <h1>Classement des Collèges de <span class="ville-name"></span></h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="introduction">
+            <p>Découvrez le <b>classement complet des collèges de <span class="ville-name"></span> pour l'année 2024</b>. Ce classement est basé sur les données officielles de l'Éducation Nationale et prend en compte le taux de réussite au brevet, les notes aux épreuves écrites et le taux d'accès de la 6ème à la 3ème. Les établissements publics et privés sont inclus dans ce classement.</p>
+        </section>
+
+        <div class="table-container">
+            <table id="colleges-table">
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th>Rang national</th>
+                        <th>Établissement</th>
+                        <th>Secteur</th>
+                        <th>Taux de réussite</th>
+                        <th>Note écrit</th>
+                        <th>Taux d'accès</th>
+                    </tr>
+                </thead>
+                <tbody id="colleges-data"></tbody>
+            </table>
+        </div>
+
+        <!-- Section CTA principale -->
+        <section class="cta">
+            <div class="container" style="text-align: center;">
+                <h2>Vous souhaitez plus d'informations ?</h2>
+                <section class="explications">
+                    <p>Notre outil vous permet de selectionner les collèges publics ou privés, de visualiser la position de chaque établissement sur la carte de Bordeaux et de vous renseigner sur chaque collège grâce aux fiches individuelles.</p>
+                </section>
+                <a href="https://app.classement-colleges.fr/?region=Nouvelle-Aquitaine&departement=Gironde&commune=Bordeaux" class="btn">Accédez aux données</a>
+            </div>
+        </section>
+
+        <section class="help-section container">
+            <style>
+                .help-options {
+                    display: flex;
+                    justify-content: center;
+                    gap: 2rem;
+                    margin-bottom: 1rem;
+                }
+
+                .help-card {
+                    flex: 1;
+                    background: var(--card-bg);
+                    padding: 2rem;
+                    border-radius: 12px;
+                    text-decoration: none;
+                    color: var(--text-color);
+                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+
+                .help-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+                }
+
+                @media (max-width: 768px) {
+                    .help-options {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+
+                    .help-card {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+            </style>
+
+            <div class="help-options">
+                <a href="https://classement-colleges.fr/faq" class="help-card">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">❓</div>
+                    <h2 style="margin-bottom: 1rem; color: var(--primary-color);">Questions fréquentes</h2>
+                    <p style="font-size: 1rem; color: #666;">Consultez notre FAQ pour trouver des réponses rapides</p>
+                </a>
+
+                <a href="mailto:contact@classement-colleges.fr" class="help-card">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">✉️</div>
+                    <h2 style="margin-bottom: 1rem; color: var(--primary-color);">Contactez-nous</h2>
+                    <p style="font-size: 1rem; color: #666;">Une question spécifique ? N'hésitez pas à nous contacter directement par email.</p>
+                </a>
+            </div>
+        </section>
+        <a href="#" class="back-to-top" id="backToTop">↑ Haut</a>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Classement Collèges. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Récupérer le nom de la ville depuis le chemin de l'URL
+        const pathSegments = window.location.pathname.split('/');
+        const villeIndex = pathSegments.indexOf('ville') + 1;
+        const ville = villeIndex < pathSegments.length ? pathSegments[villeIndex] : '';
+        const villeName = ville.charAt(0).toUpperCase() + ville.slice(1);
+
+        // Mettre à jour tous les éléments avec la classe ville-name
+        document.querySelectorAll('.ville-name').forEach(el => {
+            el.textContent = villeName;
+        });
+
+        // Fonction pour charger et afficher les données CSV
+        async function loadCollegesData() {
+            try {
+                const response = await fetch(`2024-${ville}.csv`);
+                const csvData = await response.text();
+
+                // Parser le CSV
+                const rows = csvData.split('\n').slice(1); // Ignorer l'en-tête
+                const tableBody = document.getElementById('colleges-data');
+
+                rows.forEach(row => {
+                    if (!row.trim()) return; // Ignorer les lignes vides
+
+                    const [rank, rangNational, nom, secteur, tauxReussite, noteEcrit, tauxAcces] = row.split(',');
+
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${rank}</td>
+                        <td>${rangNational}</td>
+                        <td>${nom}</td>
+                        <td>${secteur}</td>
+                        <td>${parseFloat(tauxReussite).toFixed(1)}%</td>
+                        <td>${parseFloat(noteEcrit).toFixed(2)}/20</td>
+                        <td>${parseFloat(tauxAcces).toFixed(1)}%</td>
+                    `;
+
+                    tableBody.appendChild(tr);
+                });
+            } catch (error) {
+                console.error('Erreur lors du chargement des données:', error);
+            }
+        }
+
+        // Charger les données au chargement de la page
+        document.addEventListener('DOMContentLoaded', loadCollegesData);
+
+        // Fonction pour afficher ou masquer le bouton "Retour en haut"
+        function toggleBackToTopButton() {
+            const backToTopButton = document.getElementById('backToTop');
+            if (window.scrollY > 300) { // Afficher le bouton après avoir défilé de 300px
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        }
+
+        // Ajouter un gestionnaire d'événements pour le défilement
+        window.addEventListener('scroll', toggleBackToTopButton);
+
+        // Ajouter un gestionnaire d'événements pour le clic sur le bouton
+        document.getElementById('backToTop').addEventListener('click', (event) => {
+            event.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Défilement en douceur vers le haut
+        });
+    </script>
+</body>
+</html>
