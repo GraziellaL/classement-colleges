@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classement des Collèges de Paris | Données Officielles</title>
+    <title>Classement des Collèges de Lyon | Données Officielles</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Découvrez le classement des collèges de Paris basé sur les données officielles de l'Éducation Nationale. Comparez les établissements et leurs performances.">
-    <meta name="keywords" content="classement collèges Paris, collèges Paris, collèges publics Paris, collèges privés Paris">
+    <meta name="description" content="Découvrez le classement des collèges de Lyon basé sur les données officielles de l'Éducation Nationale. Comparez les établissements et leurs performances.">
+    <meta name="keywords" content="classement collèges Lyon, collèges Lyon, collèges publics Lyon, collèges privés Lyon">
     <meta name="author" content="Classement Collèges">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://classement-colleges.fr/ville/paris/">
+    <link rel="canonical" href="https://classement-colleges.fr/ville/Lyon/">
 
     <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Classement des Collèges de Paris | Données Officielles">
-    <meta property="og:description" content="Découvrez le classement des collèges de Paris basé sur les données officielles de l'Éducation Nationale. Comparez les établissements et leurs performances.">
-    <meta property="og:url" content="https://classement-colleges.fr/ville/paris/">
+    <meta property="og:title" content="Classement des Collèges de Lyon | Données Officielles">
+    <meta property="og:description" content="Découvrez le classement des collèges de Lyon basé sur les données officielles de l'Éducation Nationale. Comparez les établissements et leurs performances.">
+    <meta property="og:url" content="https://classement-colleges.fr/ville/Lyon/">
     <meta property="og:site_name" content="Classement Collèges">
     <meta property="og:image" content="https://classement-colleges.fr/images/school.png">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Classement des Collèges de Paris | Données Officielles">
-    <meta property="twitter:description" content="Découvrez le classement des collèges de Paris basé sur les données officielles de l'Éducation Nationale. Comparez les établissements et leurs performances.">
+    <meta name="twitter:title" content="Classement des Collèges de Lyon | Données Officielles">
+    <meta property="twitter:description" content="Découvrez le classement des collèges de Lyon basé sur les données officielles de l'Éducation Nationale. Comparez les établissements et leurs performances.">
     <meta name="twitter:image" content="https://classement-colleges.fr/images/school.png">
     
     <style>
@@ -253,7 +253,7 @@
                 <section class="explications">
                     <p>Notre outil vous permet de selectionner uniquement un arrondissement, les collèges publics ou privés, de visualiser la position de chaque établissement sur la carte de <span class="ville-name"></span> et de vous renseigner sur chaque collège grâce aux fiches individuelles.</p>
                 </section>
-                <a href="https://app.classement-colleges.fr/?region=Ile-de-France&departement=Paris" class="btn">Accédez aux données</a>
+                <a href="https://app.classement-colleges.fr/?region=Auvergne-Rh%C3%B4ne-Alpes&departement=Rh%C3%B4ne&commune=Lyon" class="btn">Accédez aux données</a>
             </div>
         </section>
 
@@ -309,14 +309,6 @@
                 </a>
             </div>
         </section>
-
-        <section class="cta-secondary">
-            <div class="container" style="text-align: center;">
-                <h2>Explorez le classement des collèges d'Île-de-France</h2>
-                <p>Découvrez les performances des collèges de toute la région ou par département.</p>
-                <a href="https://app.classement-colleges.fr/?region=Ile-de-France" class="btn">Explorer le classement</a>
-            </div>
-        </section>
         
         <a href="#" class="back-to-top" id="backToTop">↑ Haut</a>
     </main>
@@ -352,7 +344,7 @@
                 rows.forEach(row => {
                     if (!row.trim()) return; // Ignorer les lignes vides
 
-                    const [rank, rangNational, nom, commune, secteur, tauxReussite, noteEcrit, tauxAcces] = row.split(',');
+                    const [rank, rangNational, nom, secteur, tauxReussite, noteEcrit, tauxAcces] = row.split(',');
 
                     const tr = document.createElement('tr');
                     tr.innerHTML = `
