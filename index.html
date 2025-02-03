@@ -225,7 +225,7 @@
             
             <!-- New dropdown menu -->
             <div class="nav-menu">
-                <div class="hamburger-menu">
+                <div class="hamburger-menu" id="hamburgerMenu">
                     <div class="hamburger-line"></div>
                     <div class="hamburger-line"></div>
                     <div class="hamburger-line"></div>
@@ -397,5 +397,14 @@
             <p>&copy; 2025 Classement Collèges. Tous droits réservés.</p>
         </div>
     </footer>
+
+    <script>
+        const hamburgerMenu = document.getElementById('hamburgerMenu');
+        const navDropdown = document.querySelector('.nav-dropdown');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navDropdown.style.display = navDropdown.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
 </body>
 </html>
