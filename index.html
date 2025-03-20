@@ -10,6 +10,10 @@
     <link rel="canonical" href="https://classement-colleges.fr/">
     <link rel="icon" href="images/school.png" type="image/png">
 
+    <!-- Préchargement de la police Inter -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+
     <!-- Balises pour les réseaux sociaux -->
     <meta property="og:title" content="Classement des Collèges de France">
     <meta property="og:description" content="Découvrez le classement national des collèges et les statistiques de performance par région, département et ville.">
@@ -37,6 +41,7 @@
             background-color: var(--bg-color);
             margin: 0;
             padding: 0;
+            font-display: swap; /* Ajout pour optimiser le chargement des polices */
         }
         .container {
             max-width: 1200px;
@@ -120,6 +125,7 @@
         .cta {
             text-align: center;
             margin: 1rem 0;
+            min-height: 180px; /* Hauteur fixe pour éviter les shifts */
         }
         .btn {
             display: inline-block;
@@ -179,9 +185,13 @@
             transition: all 0.3s ease;
         }
 
+        .nav-menu {
+            position: relative;
+        }
+
         .nav-dropdown {
             display: none;
-            position: absolute;
+            position: absolute; /* Modifié pour être absolute */
             right: 0;
             top: 100%;
             background-color: var(--card-bg);
@@ -190,10 +200,7 @@
             border-radius: 5px;
             padding: 0.5rem 0;
             z-index: 1000;
-        }
-
-        .nav-menu {
-            position: relative;
+            transform: translateY(0); /* Assure une position stable */
         }
 
         .nav-menu:hover .nav-dropdown {
@@ -212,6 +219,11 @@
             background-color: var(--bg-color);
             color: var(--primary-color);
         }
+
+        /* Stabilité pour la section d'aide */
+        .help-section {
+            min-height: 200px;
+        }
     </style>
 
     <!-- Simple Analytics -->
@@ -222,8 +234,8 @@
     <header>
         <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
             <h1>Classement des Collèges de France</h1>
-            
-            <!-- New dropdown menu -->
+
+            <!-- Menu dropdown modifié avec position absolute -->
             <div class="nav-menu">
                 <div class="hamburger-menu" id="hamburgerMenu">
                     <div class="hamburger-line"></div>
@@ -328,7 +340,7 @@
         </section>
 
 
-        <!-- Section CTA principale -->
+        <!-- Section CTA principale avec hauteur fixe -->
         <section class="cta">
             <div class="container" style="text-align: center;">
                 <h2>Prêt à explorer les collèges près de chez vous ?</h2>
@@ -389,7 +401,7 @@
                 </a>
             </div>
         </section>
-        <iframe src="https://app.classement-colleges.fr/" title="Application de classement des collèges" style="width: 0px; height: 0px;"></iframe>
+        <div id="iframe-container"></div>
     </main>
 
     <footer>
@@ -399,11 +411,40 @@
     </footer>
 
     <script>
-        const hamburgerMenu = document.getElementById('hamburgerMenu');
-        const navDropdown = document.querySelector('.nav-dropdown');
+        // Script modifié pour éviter que l'affichage du menu cause des shifts
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerMenu = document.getElementById('hamburgerMenu');
+            const navDropdown = document.querySelector('.nav-dropdown');
 
-        hamburgerMenu.addEventListener('click', () => {
-            navDropdown.style.display = navDropdown.style.display === 'block' ? 'none' : 'block';
+            hamburgerMenu.addEventListener('click', function(e) {
+                e.stopPropagation();
+                navDropdown.style.display = navDropdown.style.display === 'block' ? 'none' : 'block';
+            });
+
+            // Fermer le menu si on clique ailleurs sur la page
+            document.addEventListener('click', function(e) {
+                if (!hamburgerMenu.contains(e.target) && !navDropdown.contains(e.target)) {
+                    navDropdown.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Attendre que la page soit complètement chargée
+            window.addEventListener('load', function() {
+                // Attendre un court délai supplémentaire pour s'assurer que tout est stable
+                setTimeout(function() {
+                    // Créer l'iframe de manière dynamique
+                    const iframeContainer = document.getElementById('iframe-container');
+                    const iframe = document.createElement('iframe');
+                    iframe.src = "https://app.classement-colleges.fr/";
+                    iframe.title = "Application de classement des collèges";
+                    iframe.style.width = "0px";
+                    iframe.style.height = "0px";
+                    iframeContainer.appendChild(iframe);
+                }, 1000); // Délai de 1 seconde
+            });
         });
     </script>
 </body>
