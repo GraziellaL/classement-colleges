@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte Scolaire 2025 : Trouver son Collège de Secteur</title>
+    <meta name="description" content="Carte scolaire 2025 : découvrez comment trouver votre collège de secteur grâce à la carte scolaire. Guide complet par département, dérogations et conseils.">
+    <meta name="keywords" content="carte scolaire, secteur collège, collège de secteur, carte scolaire 2025, affectation collège, dérogation carte scolaire">
+    <link rel="canonical" href="https://classement-colleges.fr/articles/secteur-colleges.html">
+    <link rel="icon" href="../images/school.png" type="image/png">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+
+    <style>
+        :root {
+            --primary-color: #FF4B4B;
+            --text-color: #222;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        h1 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin: 0;
+        }
+        .back-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .content {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            color: var(--text-color);
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .departments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .department-card {
+            background-color: var(--bg-color);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .department-card:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        .department-card a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .department-card a:hover {
+            color: var(--primary-color);
+        }
+        .info-box {
+            background-color: #e8f4fd;
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1.5rem 0;
+        }
+        .steps {
+            counter-reset: step-counter;
+        }
+        .step {
+            counter-increment: step-counter;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background-color: var(--bg-color);
+            border-radius: 8px;
+            position: relative;
+            padding-left: 3rem;
+        }
+        .step::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .cta-box {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .cta-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: white;
+            color: var(--primary-color);
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background-color: var(--bg-color);
+        }
+        footer {
+            background-color: var(--card-bg);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            .departments-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Carte Scolaire & Collège de Secteur</h1>
+                <a href="/" class="back-link">← Retour à l'accueil</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content">
+            <p>La <strong>carte scolaire</strong> détermine votre <strong>collège de secteur</strong> selon votre adresse de résidence. Comprendre cette organisation est essentiel pour connaître l'établissement public où votre enfant sera affecté. Découvrez comment consulter la carte scolaire et identifier facilement votre secteur collège.</p>
+
+            <h2>🗺️ Comprendre la carte scolaire</h2>
+            <p>La <strong>carte scolaire</strong> est le document officiel qui définit les secteurs d'attribution des collèges publics. Elle divise le territoire en zones géographiques, chacune rattachée à un établissement spécifique. Cette carte scolaire est mise à jour chaque année par les services départementaux de l'Éducation nationale.</p>
+
+            <div class="info-box">
+                <strong>Carte scolaire 2025 :</strong> Les nouvelles cartes scolaires sont généralement publiées entre février et avril pour la rentrée suivante.
+            </div>
+
+            <h2>🏠 Qu'est-ce qu'un collège de secteur ?</h2>
+            <p>Le <strong>collège de secteur</strong> est l'établissement public auquel votre enfant est automatiquement affecté selon votre adresse de domicile. Cette organisation, définie par la <strong>carte scolaire</strong>, vise à répartir équitablement les élèves sur le territoire et garantit une place à chaque enfant dans un collège proche de son domicile.
+
+            <div class="info-box">
+                <strong>À savoir :</strong> Le secteur des collèges ne concerne que les établissements publics. Les collèges privés appliquent leurs propres critères d'admission.
+            </div>
+
+            <h2>📍 Carte scolaire par département - Secteur collège</h2>
+            <p>Consultez directement la carte scolaire de votre département pour connaître votre collège de secteur :</p>
+
+            <div class="departments-grid">
+                <div class="department-card">
+                    <a href="https://experience.arcgis.com/experience/5b6803bc7f634620a85da29dd8a113fe/" target="_blank">
+                        <strong>Paris (75)</strong><br>
+                    </a>
+                </div>
+                <div class="department-card">
+                    <a href="https://hauts-de-seine.maps.arcgis.com/apps/webappviewer/index.html?id=6afe710504f44701b06a1b70164062bd" target="_blank">
+                        <strong>Hauts-de-Seine (92)</strong><br>
+                    </a>
+                </div>
+                <div class="department-card">
+                    <a href="https://seinesaintdenis.fr/l-essentiel-du-departement/vos-services-en-ligne/colleges/article/trouvez-votre-college-de-secteur" target="_blank">
+                        <strong>Seine-Saint-Denis (93)</strong><br>
+                    </a>
+                </div>
+                <div class="department-card">
+                    <a href="https://geo.valdemarne.fr/explorer/fr/jeux-de-donnees/sectorisation-des-colleges-publics-val-de-marne/donnees" target="_blank">
+                        <strong>Val-de-Marne (94)</strong><br>
+                    </a>
+                </div>
+                <div class="department-card">
+                    <a href="https://data.grandlyon.com/portail/fr/jeux-de-donnees/secteurs-colleges-metropole-lyon/donnees" target="_blank">
+                        <strong>Métropole de Lyon</strong><br>
+                    </a>
+                </div>
+                <div class="department-card">
+                    <a href="https://geodata.ain.fr/apps/externe/College_Ain/" target="_blank">
+                        <strong>Ain (1)</strong><br>
+                    </a>
+                </div>
+                <div class="department-card">
+                    <a href="https://monetablissement.gironde.fr/" target="_blank">
+                        <strong>Gironde (33)</strong><br>
+                    </a>
+                </div>
+                <div class="department-card">
+                    <a href="https://loire-atlantique.maps.arcgis.com/apps/webappviewer/index.html?id=80cec632eeff426a9d5cc22c64dc9983" target="_blank">
+                        <strong>Loire-Atlantique (44)</strong><br>
+                    </a>
+                </div>
+                <div class="department-card">
+                    <a href="https://www.haute-garonne.fr/service/la-sectorisation" target="_blank">
+                        <strong>Haute-Garonne (31)</strong><br>
+                    </a>
+                </div>
+                <div class="department-card">
+                    <a href="https://finistere.maps.arcgis.com/apps/webappviewer/index.html?id=b9a4658dced844d28b7523d805df8aff" target="_blank">
+                        <strong>Finistère (29)</strong><br>
+                    </a>
+                </div>
+                <div class="department-card">
+                    <a href="https://sigcg78.maps.arcgis.com/apps/webappviewer/index.html?id=4f8ffad2c8cf40828ff737414c91bbc2" target="_blank">
+                        <strong>Yvelines (78)</strong><br>
+                    </a>
+                </div>
+                <div class="department-card">
+                    <a href="https://sig49.maps.arcgis.com/apps/webappviewer/index.html?id=1c40394a15414a98975f7486297a4f3f" target="_blank">
+                        <strong>Maine et Loire (49)</strong><br>
+                    </a>
+                </div>
+            </div>
+
+            <h2>🔍 Comment consulter la carte scolaire de votre secteur ?</h2>
+            <div class="warning-box">
+                <strong>Important :</strong> Les liens peuvent évoluer. Si un lien ne fonctionne pas, ou si votre département n'est pas référencé sur notre site effectuer les recherches ci-dessous.
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1rem 0;">
+                <div style="background-color: var(--bg-color); padding: 1rem; border-radius: 8px;">
+                    <h3 style="margin-top: 0; color: var(--primary-color);">1. Contactez votre mairie</h3>
+                    <p style="margin: 0;">La mairie de votre commune dispose de toutes les informations sur la sectorisation locale.</p>
+                </div>
+                <div style="background-color: var(--bg-color); padding: 1rem; border-radius: 8px;">
+                    <h3 style="margin-top: 0; color: var(--primary-color);">2. Consultez le site du département</h3>
+                    <p style="margin: 0;">Chaque conseil départemental publie sa carte scolaire sur son site internet.</p>
+                </div>
+                <div style="background-color: var(--bg-color); padding: 1rem; border-radius: 8px;">
+                    <h3 style="margin-top: 0; color: var(--primary-color);">3. Contactez l'inspection académique</h3>
+                    <p style="margin: 0;">Les services départementaux de l'Éducation nationale peuvent vous renseigner.</p>
+                </div>
+            </div>
+
+            <h2>📋 Les dérogations possibles</h2>
+            <p>Il est possible de demander une dérogation pour inscrire votre enfant dans un autre collège que celui de votre secteur. Les motifs acceptés sont généralement :</p>
+
+            <ul>
+                <li><strong>Raisons médicales</strong> : handicap, maladie chronique nécessitant un suivi particulier</li>
+                <li><strong>Parcours scolaire spécifique</strong> : classe bilingue, section sportive, etc.</li>
+                <li><strong>Raisons sociales</strong> : situation familiale difficile, fratrie déjà scolarisée</li>
+                <li><strong>Raisons professionnelles</strong> : rapprochement du lieu de travail des parents</li>
+                <li><strong>Convenances personnelles</strong> : autres motifs (rarement acceptés)</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>Procédure :</strong> Les demandes de dérogation se font généralement entre avril et mai pour la rentrée suivante. Contactez le directeur de votre établissement actuel ou la Direction des services départementaux de l'Éducation nationale.
+            </div>
+
+            <h2>📅 Calendrier et démarches</h2>
+            <h3>Passage CM2 → 6ème</h3>
+            <p>L'affectation se fait automatiquement. Vous recevrez un dossier d'inscription au collège de secteur vers mai-juin.</p>
+
+            <h3>Déménagement en cours d'année</h3>
+            <p>En cas de déménagement, contactez rapidement :</p>
+            <ul>
+                <li>Le collège actuel de votre enfant</li>
+                <li>L'inspection académique du nouveau département</li>
+                <li>La mairie de votre nouvelle commune</li>
+            </ul>
+
+            <h2>🏫 Collège privé vs public</h2>
+            <p>Les établissements privés ne sont pas soumis à la sectorisation. Cependant, ils appliquent leurs propres critères d'admission et peuvent avoir des listes d'attente. L'inscription se fait directement auprès de l'établissement. ⚠️ Attention, il faut s'y prendre en avance généralement entre septembre et décembre de l'année scolaire en cours pour la rentrée suivante.</p>
+
+            <div class="cta-box">
+                <h3>Vous avez trouvé votre collège de secteur ?</h3>
+                <p>Maintenant que vous connaissez votre collège de secteur grâce à la carte scolaire, consultez son classement et ses statistiques de réussite.</p>
+                <a href="https://app.classement-colleges.fr/" class="btn">Consulter le classement</a>
+            </div>
+
+            <h2>❓ Questions fréquentes</h2>
+            <h3>Peut-on choisir son collège public ?</h3>
+            <p>Non, l'affectation se fait automatiquement selon votre adresse. Seules les dérogations ou une inscription dans un établissement privé permettent de changer d'établissement.</p>
+
+            <h3>Que faire si le collège de secteur ne nous convient pas ?</h3>
+            <p>Vous pouvez demander une dérogation, explorer les options privées, ou envisager un déménagement vers un secteur plus adapté.</p>
+
+            <h3>La carte scolaire change-t-elle chaque année ?</h3>
+            <p>Oui, la carte scolaire peut être révisée annuellement pour s'adapter aux évolutions démographiques et à la capacité d'accueil des établissements. Cependant, une fois que votre enfant commence sa scolarité dans un collège on ne lui demandera pas d'en changer si votre rue change de collège de secteur.</p>
+
+            <h3>Peut-on consulter la carte scolaire en ligne ?</h3>
+            <p>La plupart des départements proposent une carte scolaire interactive en ligne. Vous pouvez saisir votre adresse pour connaître instantanément votre collège de secteur.</p>
+
+            <h3>Comment contester une affectation de secteur ?</h3>
+            <p>Contactez l'inspection académique de votre département. Un recours est possible en cas d'erreur dans l'application de la carte scolaire.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Classement Collèges. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
