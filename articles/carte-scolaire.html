@@ -21,7 +21,7 @@
         }
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
+            line-height: 1.5;
             color: var(--text-color);
             background-color: var(--bg-color);
             margin: 0;
@@ -30,12 +30,12 @@
         .container {
             max-width: 1000px;
             margin: 0 auto;
-            padding: 1.5rem;
+            padding: 1rem;
         }
         header {
             background-color: var(--card-bg);
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 1rem 0;
+            padding: 0.5rem 0;
         }
         .header-content {
             display: flex;
@@ -44,40 +44,33 @@
         }
         h1 {
             color: var(--primary-color);
-            font-size: 1.8rem;
-            margin: 0;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
         }
         .back-link {
             color: var(--primary-color);
             text-decoration: none;
             font-weight: 500;
-            padding: 0.5rem 1rem;
-            border: 2px solid var(--primary-color);
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-        .back-link:hover {
-            background-color: var(--primary-color);
-            color: white;
         }
         .content {
             background-color: var(--card-bg);
             border-radius: 10px;
-            padding: 2rem;
-            margin: 2rem 0;
+            padding: 1.2rem;
+            margin: 1rem 0;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         h2 {
             color: var(--primary-color);
-            font-size: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            margin-top: 1.2rem;
+            margin-bottom: 0.5rem;
         }
         h3 {
             color: var(--text-color);
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            margin-bottom: 0.1rem;
         }
         .departments-grid {
             display: grid;
@@ -109,7 +102,7 @@
             background-color: #e8f4fd;
             border-left: 4px solid var(--primary-color);
             padding: 1rem;
-            margin: 1.5rem 0;
+            margin: 1rem 0;
         }
         .warning-box {
             background-color: #fff3cd;
@@ -193,29 +186,20 @@
 <body>
     <header>
         <div class="container">
-            <div class="header-content">
-                <h1>Carte Scolaire & Collège de Secteur</h1>
-                <a href="/" class="back-link">← Retour à l'accueil</a>
-            </div>
+            <a href="/" class="back-link">← Retour à l'accueil</a>
+            <h1>Carte Scolaire & Collège de Secteur</h1>
         </div>
     </header>
 
     <main class="container">
         <div class="content">
-            <p>La <strong>carte scolaire</strong> détermine votre <strong>collège de secteur</strong> selon votre adresse de résidence. Comprendre cette organisation est essentiel pour connaître l'établissement public où votre enfant sera affecté. Découvrez comment consulter la carte scolaire et identifier facilement votre secteur collège.</p>
+            <p>La <strong>carte scolaire</strong> détermine le <strong>collège de secteur</strong> de votre enfant selon votre adresse de résidence. Découvrez comment identifier votre collège de secteur puis <a href='https://app.classement-colleges.fr/' target='_blank'>comparer les résultats des collèges près de chez vous et dans toute la France.</a></p>
 
             <h2>🗺️ Comprendre la carte scolaire</h2>
-            <p>La <strong>carte scolaire</strong> est le document officiel qui définit les secteurs d'attribution des collèges publics. Elle divise le territoire en zones géographiques, chacune rattachée à un établissement spécifique. Cette carte scolaire est mise à jour chaque année par les services départementaux de l'Éducation nationale.</p>
+            <p>La <strong>carte scolaire</strong> est le document officiel mis à jour chaque année qui définit les secteurs d'attribution des collèges publics. Elle vise à répartir équitablement les élèves et garantir une place à chaque enfant à proximité de son domicile.
 
             <div class="info-box">
-                <strong>Carte scolaire 2025 :</strong> Les nouvelles cartes scolaires sont généralement publiées entre février et avril pour la rentrée suivante.
-            </div>
-
-            <h2>🏠 Qu'est-ce qu'un collège de secteur ?</h2>
-            <p>Le <strong>collège de secteur</strong> est l'établissement public auquel votre enfant est automatiquement affecté selon votre adresse de domicile. Cette organisation, définie par la <strong>carte scolaire</strong>, vise à répartir équitablement les élèves sur le territoire et garantit une place à chaque enfant dans un collège proche de son domicile.
-
-            <div class="info-box">
-                <strong>À savoir :</strong> Le secteur des collèges ne concerne que les établissements publics. Les collèges privés appliquent leurs propres critères d'admission.
+                <strong>Carte scolaire 2025 : </strong>Les nouvelles cartes scolaires sont généralement publiées entre février et avril pour la rentrée suivante. <strong> Les collèges privés</strong> ne sont pas concernés par cette sectorisation, ils appliquent leurs propres critères d'admission.
             </div>
 
             <h2>📍 Carte scolaire par département - Secteur collège</h2>
@@ -285,9 +269,7 @@
             </div>
 
             <h2>🔍 Comment consulter la carte scolaire de votre secteur ?</h2>
-            <div class="warning-box">
-                <strong>Important :</strong> Les liens peuvent évoluer. Si un lien ne fonctionne pas, ou si votre département n'est pas référencé sur notre site effectuer les recherches ci-dessous.
-            </div>
+            <strong>Note :</strong> Les liens peuvent évoluer. Si un lien ne fonctionne pas, ou si votre département n'est pas référencé sur notre site effectuer les recherches ci-dessous.
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1rem 0;">
                 <div style="background-color: var(--bg-color); padding: 1rem; border-radius: 8px;">
                     <h3 style="margin-top: 0; color: var(--primary-color);">1. Contactez votre mairie</h3>
@@ -301,6 +283,12 @@
                     <h3 style="margin-top: 0; color: var(--primary-color);">3. Contactez l'inspection académique</h3>
                     <p style="margin: 0;">Les services départementaux de l'Éducation nationale peuvent vous renseigner.</p>
                 </div>
+            </div>
+
+            <div class="cta-box">
+                <h3>Vous avez trouvé votre collège de secteur ?</h3>
+                <p>Consultez son classement national et ses indicateurs de réussite, comparez-le aux collèges près de chez vous.</p>
+                <a href="https://app.classement-colleges.fr/" class="btn">En savoir plus</a>
             </div>
 
             <h2>📋 Les dérogations possibles</h2>
@@ -332,12 +320,6 @@
 
             <h2>🏫 Collège privé vs public</h2>
             <p>Les établissements privés ne sont pas soumis à la sectorisation. Cependant, ils appliquent leurs propres critères d'admission et peuvent avoir des listes d'attente. L'inscription se fait directement auprès de l'établissement. ⚠️ Attention, il faut s'y prendre en avance généralement entre septembre et décembre de l'année scolaire en cours pour la rentrée suivante.</p>
-
-            <div class="cta-box">
-                <h3>Vous avez trouvé votre collège de secteur ?</h3>
-                <p>Maintenant que vous connaissez votre collège de secteur grâce à la carte scolaire, consultez son classement et ses statistiques de réussite.</p>
-                <a href="https://app.classement-colleges.fr/" class="btn">Consulter le classement</a>
-            </div>
 
             <h2>❓ Questions fréquentes</h2>
             <h3>Peut-on choisir son collège public ?</h3>
