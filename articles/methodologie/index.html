@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comment est calculé le classement des collèges ?</title>
-    <meta name="description" content="Découvrez comment est calculé le classement des collèges de France : méthodologie, indicateurs utilisés, sources des données officielles.">
-    <meta name="keywords" content="classement collèges, méthodologie classement, indicateurs collèges, taux de réussite brevet, taux d'accès 6ème-3ème">
+    <meta name="description"
+        content="Découvrez comment est calculé le classement des collèges de France : méthodologie, indicateurs utilisés, sources des données officielles.">
+    <meta name="keywords"
+        content="classement collèges, méthodologie classement, indicateurs collèges, taux de réussite brevet, taux d'accès 6ème-3ème">
     <link rel="canonical" href="https://classement-colleges.fr/methodologie/">
     <link rel="icon" href="../images/school.png" type="image/png">
 
@@ -13,12 +16,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         :root {
             --primary-color: #FF4B4B;
             --text-color: #222;
             --bg-color: #f8f9fa;
             --card-bg: #ffffff;
         }
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
             line-height: 1.5;
@@ -27,44 +35,52 @@
             margin: 0;
             padding: 0;
         }
+
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 1rem;
         }
+
         header {
             background-color: var(--card-bg);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 0.5rem 0;
         }
+
         .header-content {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
+
         h1 {
             color: var(--primary-color);
             font-size: 2rem;
             margin-bottom: 0.5rem;
             line-height: 1.3;
         }
+
         .back-link {
             color: var(--primary-color);
             text-decoration: none;
             font-weight: 500;
         }
+
         .content {
             background-color: var(--card-bg);
             border-radius: 10px;
             padding: 2.5rem;
             margin: 1rem 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
         h1 {
             margin-bottom: 1.5rem;
             padding-bottom: 1rem;
             border-bottom: 2px solid var(--bg-color);
         }
+
         h2 {
             color: var(--primary-color);
             font-size: 1.5rem;
@@ -73,9 +89,11 @@
             padding-bottom: 0.5rem;
             border-bottom: 2px solid var(--bg-color);
         }
+
         h2:first-of-type {
             margin-top: 1.5rem;
         }
+
         h3 {
             color: var(--text-color);
             font-size: 1.2rem;
@@ -83,35 +101,43 @@
             margin-bottom: 0.6rem;
             font-weight: 600;
         }
+
         p {
             margin: 0.6rem 0;
             line-height: 1.7;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 1.5rem 0;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
-        th, td {
+
+        th,
+        td {
             border: 1px solid #e0e0e0;
             padding: 1rem;
             text-align: left;
         }
+
         th {
             background-color: var(--primary-color);
             color: white;
             font-weight: 600;
             font-size: 0.95rem;
         }
+
         td {
             background-color: white;
         }
+
         tr:nth-child(even) td {
             background-color: var(--bg-color);
         }
+
         .info-box {
             background-color: #e8f4fd;
             border-left: 4px solid var(--primary-color);
@@ -120,6 +146,7 @@
             border-radius: 0 8px 8px 0;
             line-height: 1.7;
         }
+
         .warning-box {
             background-color: #fff3cd;
             border-left: 4px solid #ffc107;
@@ -128,6 +155,7 @@
             border-radius: 0 8px 8px 0;
             line-height: 1.7;
         }
+
         .highlight {
             background-color: #fff3cd;
             border-left: 4px solid #ffc107;
@@ -136,6 +164,7 @@
             border-radius: 0 8px 8px 0;
             line-height: 1.7;
         }
+
         code {
             background-color: var(--bg-color);
             padding: 0.3rem 0.6rem;
@@ -145,17 +174,23 @@
             display: inline-block;
             margin: 0.5rem 0;
         }
-        ul, ol {
+
+        ul,
+        ol {
             margin: 0.8rem 0;
             padding-left: 2rem;
             line-height: 1.8;
         }
+
         li {
             margin: 0.5rem 0;
         }
-        ul ul, ol ul {
+
+        ul ul,
+        ol ul {
             margin: 0.5rem 0;
         }
+
         .faq-item {
             margin: 1.5rem 0;
             padding: 1.5rem;
@@ -163,25 +198,31 @@
             border-radius: 8px;
             border-left: 3px solid var(--primary-color);
         }
+
         .faq-question {
             font-weight: 600;
             color: var(--primary-color);
             margin-bottom: 0.8rem;
             font-size: 1.05rem;
         }
+
         .faq-item p {
             margin: 0.8rem 0;
         }
+
         .faq-item ul {
             margin: 0.8rem 0;
         }
+
         a {
             color: var(--primary-color);
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
         .cta-box {
             background-color: var(--primary-color);
             color: white;
@@ -189,17 +230,20 @@
             border-radius: 10px;
             text-align: center;
             margin: 3rem 0;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         .cta-box h3 {
             color: white;
             margin-top: 0;
             margin-bottom: 1rem;
         }
+
         .cta-box p {
             margin: 1rem 0;
             font-size: 1.05rem;
         }
+
         .btn {
             display: inline-block;
             background-color: white;
@@ -211,12 +255,15 @@
             transition: all 0.3s ease;
             margin-top: 1rem;
         }
+
         .btn:hover {
             background-color: var(--bg-color);
         }
+
         .steps {
             counter-reset: step-counter;
         }
+
         .step {
             counter-increment: step-counter;
             margin: 1.5rem 0;
@@ -226,6 +273,7 @@
             position: relative;
             padding-left: 3rem;
         }
+
         .step::before {
             content: counter(step-counter);
             position: absolute;
@@ -242,45 +290,102 @@
             font-weight: bold;
             font-size: 0.9rem;
         }
+
         footer {
             background-color: var(--card-bg);
             text-align: center;
             padding: 1rem 0;
             margin-top: 2rem;
         }
+
         .section-divider {
             height: 1px;
             background: linear-gradient(to right, transparent, var(--bg-color), transparent);
             margin: 2rem 0;
             border: none;
         }
+
+        .help-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 3rem auto;
+        }
+
+        .help-options {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .help-card {
+            flex: 1;
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-color);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .help-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            text-decoration: none;
+        }
+
+        .help-card h3 {
+            margin-top: 0;
+        }
+
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
                 gap: 1rem;
             }
+
             h1 {
                 font-size: 1.5rem;
             }
+
             .content {
                 padding: 1.5rem;
             }
+
             h2 {
                 font-size: 1.3rem;
                 margin-top: 2rem;
             }
+
             table {
                 font-size: 0.9rem;
             }
-            th, td {
+
+            th,
+            td {
                 padding: 0.8rem;
             }
-            .info-box, .warning-box, .highlight {
+
+            .info-box,
+            .warning-box,
+            .highlight {
                 padding: 1.2rem;
+            }
+
+            .help-options {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .help-card {
+                width: 100%;
+                max-width: 100%;
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -294,12 +399,17 @@
         <div class="content">
             <h1>Comment est calculé le classement des collèges ?</h1>
 
-            <p>Ce classement des collèges de France est établi à partir des données officielles du Ministère de l'Éducation Nationale. Il vise à offrir aux parents et aux élèves une vision transparente et objective de la performance des établissements, en se basant exclusivement sur des indicateurs quantifiables et vérifiables.</p>
+            <p>Ce classement des collèges de France est établi à partir des données officielles du Ministère de
+                l'Éducation Nationale. Il vise à offrir aux parents et aux élèves une vision transparente et objective
+                de la performance des établissements, en se basant exclusivement sur des indicateurs quantifiables et
+                vérifiables.</p>
 
             <hr class="section-divider">
 
             <h2>Sources des données</h2>
-            <p>Toutes les données utilisées proviennent de <strong>sources officielles publiques</strong> du Ministère de l'Éducation Nationale, accessibles gratuitement sur le portail <strong><a href="https://data.education.gouv.fr" target="_blank">data.education.gouv.fr</a></strong> :</p>
+            <p>Toutes les données utilisées proviennent de <strong>sources officielles publiques</strong> du Ministère
+                de l'Éducation Nationale, accessibles gratuitement sur le portail <strong><a
+                        href="https://data.education.gouv.fr" target="_blank">data.education.gouv.fr</a></strong> :</p>
             <ol>
                 <li><strong>Annuaire des établissements</strong>
                     <ul>
@@ -320,13 +430,15 @@
                 </li>
                 <li><strong>Indice de Position Sociale (IPS)</strong>
                     <ul>
-                        <li>Contexte social des établissements (affiché à titre informatif, non utilisé dans le classement)</li>
+                        <li>Contexte social des établissements (affiché à titre informatif, non utilisé dans le
+                            classement)</li>
                     </ul>
                 </li>
             </ol>
 
             <div class="info-box">
-                <strong>Dernière mise à jour</strong> : Les données sont mises à jour régulièrement dès leur publication sur data.education.gouv.fr.
+                <strong>Dernière mise à jour</strong> : Les données sont mises à jour régulièrement dès leur publication
+                sur data.education.gouv.fr.
             </div>
 
             <hr class="section-divider">
@@ -334,24 +446,33 @@
             <h2>Les trois indicateurs utilisés</h2>
             <h3>1. Taux de réussite au brevet</h3>
             <p><strong>Définition</strong> : Pourcentage d'élèves qui passent le brevet et l'obtiennent.</p>
-            <p><strong>Période</strong> : Moyenne calculée sur les <strong>5 dernières années</strong> (2020, 2021, 2022, 2023, 2024)</p>
-            <p><strong>Interprétation</strong> : Un taux élevé indique que l'établissement prépare bien ses élèves à l'examen du brevet.</p>
+            <p><strong>Période</strong> : Moyenne calculée sur les <strong>5 dernières années</strong> (2020, 2021,
+                2022, 2023, 2024)</p>
+            <p><strong>Interprétation</strong> : Un taux élevé indique que l'établissement prépare bien ses élèves à
+                l'examen du brevet.</p>
             <p><strong>Moyenne nationale</strong> : 88.88%</p>
 
             <h3>2. Taux d'accès 6ème-3ème</h3>
-            <p><strong>Définition</strong> : Pourcentage d'élèves inscrits en 6ème qui sont accompagnés jusqu'en 3ème dans le même établissement.</p>
+            <p><strong>Définition</strong> : Pourcentage d'élèves inscrits en 6ème qui sont accompagnés jusqu'en 3ème
+                dans le même établissement.</p>
             <p><strong>Période</strong> : Moyenne calculée sur <strong>3 années</strong> (2022, 2023, 2024)</p>
-            <p><strong>Interprétation</strong> : Un taux de 100% signifie que tous les élèves entrés en 6ème sont toujours présents en 3ème. Un taux plus bas peut indiquer des départs, redoublements, ou changements d'établissement. Cet indicateur mesure la capacité du collège à maintenir et accompagner les élèves tout au long du cycle collège (4 ans).</p>
+            <p><strong>Interprétation</strong> : Un taux de 100% signifie que tous les élèves entrés en 6ème sont
+                toujours présents en 3ème. Un taux plus bas peut indiquer des départs, redoublements, ou changements
+                d'établissement. Cet indicateur mesure la capacité du collège à maintenir et accompagner les élèves tout
+                au long du cycle collège (4 ans).</p>
             <p><strong>Moyenne nationale</strong> : 90.28%</p>
-        
+
             <div class="highlight">
-                <strong>Pourquoi cet indicateur est important</strong> : Il reflète la capacité de l'établissement à éviter le décrochage scolaire et à assurer un suivi continu des élèves, ce qui est un élément essentiel de la qualité éducative.
+                <strong>Pourquoi cet indicateur est important</strong> : Il reflète la capacité de l'établissement à
+                éviter le décrochage scolaire et à assurer un suivi continu des élèves, ce qui est un élément essentiel
+                de la qualité éducative.
             </div>
 
             <h3>3. Note à l'écrit</h3>
             <p><strong>Définition</strong> : Moyenne des notes obtenues à l'examen écrit du brevet (sur 20).</p>
             <p><strong>Période</strong> : Moyenne calculée sur <strong>3 années</strong> (2022, 2023, 2024)</p>
-            <p><strong>Interprétation</strong> : Une note élevée indique que les élèves maîtrisent bien les compétences évaluées à l'écrit du brevet.</p>
+            <p><strong>Interprétation</strong> : Une note élevée indique que les élèves maîtrisent bien les compétences
+                évaluées à l'écrit du brevet.</p>
             <p><strong>Moyenne nationale</strong> : 10.91/20</p>
 
             <hr class="section-divider">
@@ -359,43 +480,49 @@
             <h2>Méthode de calcul du classement</h2>
             <p>Le classement est établi selon une méthode en plusieurs étapes :</p>
             <h3>Étape 1 : Normalisation</h3>
-            <p>Chaque indicateur est d'abord normalisé sur une échelle de 0 à 100 pour permettre la comparaison entre indicateurs de natures différentes :</p>
+            <p>Chaque indicateur est d'abord normalisé sur une échelle de 0 à 100 pour permettre la comparaison entre
+                indicateurs de natures différentes :</p>
             <code>Indicateur normé = ((Valeur - Minimum) / (Maximum - Minimum)) × 100</code>
-            <p>Cette étape permet de mettre tous les indicateurs sur la même échelle (0 à 100), indépendamment de leurs unités d'origine (pourcentage, note sur 20).</p>
+            <p>Cette étape permet de mettre tous les indicateurs sur la même échelle (0 à 100), indépendamment de leurs
+                unités d'origine (pourcentage, note sur 20).</p>
 
             <h3>Étape 2 : Standardisation</h3>
-            <p>Chaque indicateur normalisé est ensuite standardisé (transformation en score Z) pour tenir compte de la distribution des valeurs :</p>
+            <p>Chaque indicateur normalisé est ensuite standardisé (transformation en score Z) pour tenir compte de la
+                distribution des valeurs :</p>
             <code>Indicateur standardisé = (Indicateur normé - Moyenne) / Écart-type</code>
-            <p>Cette transformation met tous les indicateurs sur la même échelle statistique (moyenne = 0, écart-type = 1), <strong>ce qui les rend comparables et permet de les additionner et de les pondérer</strong> de manière cohérente pour calculer le score global.</p>
+            <p>Cette transformation met tous les indicateurs sur la même échelle statistique (moyenne = 0, écart-type =
+                1), <strong>ce qui les rend comparables et permet de les additionner et de les pondérer</strong> de
+                manière cohérente pour calculer le score global.</p>
 
             <h3>Étape 3 : Pondération et calcul du score global</h3>
-            <p>Les indicateurs standardisés sont ensuite pondérés selon leur importance relative dans l'évaluation de la qualité d'un établissement :</p>
-            
+            <p>Les indicateurs standardisés sont ensuite pondérés selon leur importance relative dans l'évaluation de la
+                qualité d'un établissement :</p>
+
             <table>
-            <thead>
-                <tr>
-                    <th>Indicateur</th>
-                    <th>Coefficient</th>
-                    <th>Poids relatif</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Taux de réussite au brevet</strong></td>
-                    <td><strong>1</strong></td>
-                    <td>20%</td>
-                </tr>
-                <tr>
-                    <td><strong>Taux d'accès 6ème-3ème</strong></td>
-                    <td><strong>2</strong></td>
-                    <td>40%</td>
-                </tr>
-                <tr>
-                    <td><strong>Note à l'écrit</strong></td>
-                    <td><strong>2</strong></td>
-                    <td>40%</td>
-                </tr>
-            </tbody>
+                <thead>
+                    <tr>
+                        <th>Indicateur</th>
+                        <th>Coefficient</th>
+                        <th>Poids relatif</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Taux de réussite au brevet</strong></td>
+                        <td><strong>1</strong></td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Taux d'accès 6ème-3ème</strong></td>
+                        <td><strong>2</strong></td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Note à l'écrit</strong></td>
+                        <td><strong>2</strong></td>
+                        <td>40%</td>
+                    </tr>
+                </tbody>
             </table>
 
             <p><strong>Formule du score global</strong> :</p>
@@ -404,7 +531,10 @@
             <div class="info-box">
                 <strong>Pourquoi ces coefficients ?</strong><br>
                 <ul>
-                    <li>Le <strong>taux d'accès 6ème-3ème</strong> et la <strong>note à l'écrit</strong> ont un coefficient de 2 (40% chacun) car ils reflètent des aspects essentiels de la qualité éducative : le taux d'accès mesure la capacité à accompagner les élèves sur la durée, et la note à l'écrit mesure le niveau de maîtrise des compétences fondamentales.</li>
+                    <li>Le <strong>taux d'accès 6ème-3ème</strong> et la <strong>note à l'écrit</strong> ont un
+                        coefficient de 2 (40% chacun) car ils reflètent des aspects essentiels de la qualité éducative :
+                        le taux d'accès mesure la capacité à accompagner les élèves sur la durée, et la note à l'écrit
+                        mesure le niveau de maîtrise des compétences fondamentales.</li>
                 </ul>
             </div>
 
@@ -421,15 +551,22 @@
             <h2>Comprendre votre classement</h2>
             <h3>Comment interpréter le rang ?</h3>
             <ul>
-                <li><strong>Rang 1-100</strong> : Établissements avec d'excellents résultats sur tous les indicateurs</li>
+                <li><strong>Rang 1-100</strong> : Établissements avec d'excellents résultats sur tous les indicateurs
+                </li>
                 <li><strong>Rang 100-1000</strong> : Établissements avec de très bons résultats</li>
-                <li><strong>Rang 1000-3000</strong> : Établissements avec de bons résultats, proches de la moyenne nationale</li>
-                <li><strong>Rang 3000-6000</strong> : Établissements avec des résultats variables selon les indicateurs</li>
-                <li><strong>Rang 6000+</strong> : Établissements avec des résultats en dessous de la moyenne nationale sur au moins un indicateur important</li>
+                <li><strong>Rang 1000-3000</strong> : Établissements avec de bons résultats, proches de la moyenne
+                    nationale</li>
+                <li><strong>Rang 3000-6000</strong> : Établissements avec des résultats variables selon les indicateurs
+                </li>
+                <li><strong>Rang 6000+</strong> : Établissements avec des résultats en dessous de la moyenne nationale
+                    sur au moins un indicateur important</li>
             </ul>
 
             <div class="warning-box">
-                <strong>Important</strong> : Un rang élevé ne signifie pas nécessairement que l'établissement est "mauvais". Il peut avoir d'excellents résultats sur certains indicateurs (par exemple, un très bon taux de réussite) mais être pénalisé par un indicateur avec un fort coefficient (par exemple, un faible taux d'accès 6ème-3ème).
+                <strong>Important</strong> : Un rang élevé ne signifie pas nécessairement que l'établissement est
+                "mauvais". Il peut avoir d'excellents résultats sur certains indicateurs (par exemple, un très bon taux
+                de réussite) mais être pénalisé par un indicateur avec un fort coefficient (par exemple, un faible taux
+                d'accès 6ème-3ème).
             </div>
 
             <h3>Comparaison avec la moyenne nationale</h3>
@@ -438,7 +575,8 @@
                 <li>La valeur de chaque indicateur</li>
                 <li>La différence avec la moyenne nationale (affichée avec une flèche ↑ ou ↓)</li>
             </ul>
-            <p>Cela vous permet de comprendre rapidement quels sont les points forts et les points d'attention de l'établissement.</p>
+            <p>Cela vous permet de comprendre rapidement quels sont les points forts et les points d'attention de
+                l'établissement.</p>
 
             <hr class="section-divider">
 
@@ -446,15 +584,20 @@
             <h3>Si vous constatez une erreur</h3>
             <p>Si vous pensez qu'une donnée est incorrecte pour votre établissement :</p>
             <ol>
-                <li><strong>Vérifiez directement sur le site officiel</strong> : <a href="https://data.education.gouv.fr" target="_blank">https://data.education.gouv.fr</a>
+                <li><strong>Vérifiez directement sur le site officiel</strong> : <a
+                        href="https://data.education.gouv.fr" target="_blank">https://data.education.gouv.fr</a>
                     <ul>
-                        <li>Recherchez le fichier "Indicateurs de valeur ajoutée des collèges" pour le taux d'accès 6ème-3ème et la note à l'écrit</li>
-                        <li>Recherchez le fichier "Diplôme national du brevet par établissement" pour le taux de réussite</li>
+                        <li>Recherchez le fichier "Indicateurs de valeur ajoutée des collèges" pour le taux d'accès
+                            6ème-3ème et la note à l'écrit</li>
+                        <li>Recherchez le fichier "Diplôme national du brevet par établissement" pour le taux de
+                            réussite</li>
                         <li>Vérifiez les valeurs année par année</li>
                     </ul>
                 </li>
-                <li><strong>Contactez le rectorat</strong> si vous identifiez des erreurs dans les données officielles transmises au Ministère de l'Éducation Nationale</li>
-                <li><strong>Contactez-nous</strong> à <a href="mailto:contact@classement-colleges.fr">contact@classement-colleges.fr</a> en précisant :
+                <li><strong>Contactez le rectorat</strong> si vous identifiez des erreurs dans les données officielles
+                    transmises au Ministère de l'Éducation Nationale</li>
+                <li><strong>Contactez-nous</strong> à <a
+                        href="mailto:contact@classement-colleges.fr">contact@classement-colleges.fr</a> en précisant :
                     <ul>
                         <li>L'établissement concerné</li>
                         <li>L'indicateur concerné</li>
@@ -464,7 +607,8 @@
                     </ul>
                 </li>
             </ol>
-            <p>Nous mettrons à jour nos données dès que les corrections seront disponibles sur le site officiel data.education.gouv.fr.</p>
+            <p>Nous mettrons à jour nos données dès que les corrections seront disponibles sur le site officiel
+                data.education.gouv.fr.</p>
 
             <hr class="section-divider">
 
@@ -489,57 +633,30 @@
             </ul>
 
             <div class="highlight">
-                <strong>Recommandation</strong> : Utilisez ce classement comme un élément d'information parmi d'autres lors du choix d'un établissement. Visitez les établissements, rencontrez les équipes pédagogiques, et prenez en compte vos critères personnels (proximité, options, ambiance, etc.).
+                <strong>Recommandation</strong> : Utilisez ce classement comme un élément d'information parmi d'autres
+                lors du choix d'un établissement. Visitez les établissements, rencontrez les équipes pédagogiques, et
+                prenez en compte vos critères personnels (proximité, options, ambiance, etc.).
             </div>
 
             <hr class="section-divider">
 
-            <h2>Questions fréquentes</h2>
-            <div class="faq-item">
-                <div class="faq-question">Pourquoi certains établissements n'apparaissent pas dans le classement ?</div>
-                <p>Un établissement peut ne pas apparaître si :</p>
-                <ul>
-                    <li>Il n'a pas de données complètes pour au moins un des trois indicateurs</li>
-                    <li>Il a été fermé ou fusionné</li>
-                    <li>Les données officielles ne sont pas disponibles</li>
-                    <li>C'est un collège hors-contrat (voir la question dédiée ci-dessous)</li>
-                </ul>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Pourquoi le classement change-t-il ?</div>
-                <p>Le classement est mis à jour lorsque :</p>
-                <ul>
-                    <li>De nouvelles données officielles sont publiées sur data.education.gouv.fr</li>
-                    <li>Des corrections sont apportées aux données officielles</li>
-                    <li>De nouveaux établissements sont ajoutés</li>
-                </ul>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Comment sont gérés les établissements privés et publics ?</div>
-                <p>Les établissements publics et privés sont classés ensemble, sur la base des mêmes critères. Le secteur (public/privé) est indiqué pour chaque établissement.</p>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Le classement tient-il compte du contexte social ?</div>
-                <p>L'Indice de Position Sociale (IPS) est affiché à titre informatif pour chaque établissement, mais il n'est <strong>pas utilisé dans le calcul du classement</strong>. Le classement se base uniquement sur les trois indicateurs de performance décrits ci-dessus.</p>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Pourquoi les collèges hors-contrat ne sont-ils pas classés ?</div>
-                <p>Notre classement se base exclusivement sur des données officielles publiées par le Ministère de l'Éducation Nationale sur le portail <a href="https://data.education.gouv.fr" target="_blank">data.education.gouv.fr</a>. Cette contrainte est essentielle pour garantir la fiabilité, l'objectivité et la transparence de notre classement.</p>
-                <p>Les résultats des collèges hors-contrat ne sont pas disponibles dans les fichiers officiels que nous utilisons pour établir notre classement.</p>
-                <p>Même si un établissement hors-contrat nous fournit ses données directement, nous ne pouvons pas les intégrer car nous ne pouvons pas vérifier leur exactitude.</p>
-            </div>
-
-            <div class="cta-box">
-                <h3>Vous avez des questions sur le classement ?</h3>
-                <p>Pour toute question complémentaire sur la méthodologie ou pour signaler une erreur, contactez-nous.</p>
-                <a href="mailto:contact@classement-colleges.fr" class="btn">Nous contacter</a>
-            </div>
-
         </div>
+
+        <section class="help-section">
+            <div class="help-options">
+                <a href="https://app.classement-colleges.fr/" class="help-card">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">🏆</div>
+                    <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Accéder au classement</h3>
+                    <p style="font-size: 1rem; color: #666;">Prêt à explorer les collèges près de chez vous ?</p>
+                </a>
+
+                <a href="https://classement-colleges.fr/faq" class="help-card">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">❓</div>
+                    <h3 style="margin-bottom: 1rem; color: var(--primary-color);">Questions fréquentes</h3>
+                    <p style="font-size: 1rem; color: #666;">Consultez notre FAQ pour trouver des réponses rapides</p>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -548,5 +665,5 @@
         </div>
     </footer>
 </body>
-</html>
 
+</html>

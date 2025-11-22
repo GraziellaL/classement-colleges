@@ -4,12 +4,20 @@
       "name": "Utilisation générale",
       "questions": [
         {
-          "question": "Pourquoi mon collège n’apparaît-il pas dans le classement?",
-          "answer": "Le classement inclut 6680 collèges, soit la majorité des <a href='https://www.education.gouv.fr/l-education-nationale-en-chiffres-edition-2023-378943' target='_blank'>6980 collèges recensés en France</a>.<br> Cependant, certains établissements n'apparaissent pas dans notre classement. Cela peut être dû à l'absence des données nécessaires pour calculer leur score, à des informations incomplètes, ou au fait que le collège soit signalé comme fermé.<br> <i>Si votre collège n'est pas listé et que vous pensez qu'il devrait l’être, n'hésitez pas à nous contacter pour vérifier la situation.<i>"
+          "question": "Pourquoi mon collège n'apparaît-il pas dans le classement ?",
+          "answer": "Le classement inclut 6680 collèges, soit la majorité des <a href='https://www.education.gouv.fr/l-education-nationale-en-chiffres-edition-2023-378943' target='_blank'>6980 collèges recensés en France</a>.<br><br>Un établissement peut ne pas apparaître dans notre classement pour plusieurs raisons :<br>- Il n'a pas de données complètes pour au moins un des trois indicateurs utilisés (taux de réussite au brevet, taux d'accès 6ème-3ème, note à l'écrit)<br>- Il a été fermé ou fusionné<br>- Les données officielles ne sont pas disponibles sur le portail data.education.gouv.fr<br>- C'est un collège hors-contrat (voir la question dédiée ci-dessous)<br><br><i>Si votre collège n'est pas listé et que vous pensez qu'il devrait l'être, n'hésitez pas à nous contacter pour vérifier la situation.</i>"
         },
         {
           "question": "Les établissements privés sont-ils inclus dans le classement ?",
-          "answer": "Oui, notre classement inclut à la fois les collèges publics et privés sous contrat, permettant une comparaison complète de tous les établissements reconnus par l'Éducation Nationale.<br> Leur rang est attribué indépendamment du fait qu’ils soient publics ou privés.<br> Il est possible d’obtenir séparément le <a href='https://app.classement-colleges.fr/?secteur_filter=Public' target='_blank'>classement des collèges publics de France</a> ou bien le <a href='https://app.classement-colleges.fr/?secteur_filter=Privé' target='_blank'>classement des collèges privés de France</a> en sélectionnant le filtre dédié dans l’application. "
+          "answer": "Oui, notre classement inclut à la fois les collèges publics et privés sous contrat, permettant une comparaison complète de tous les établissements reconnus par l'Éducation Nationale.<br><br>Les établissements publics et privés sont classés ensemble, sur la base des mêmes critères. Le secteur (public/privé) est indiqué pour chaque établissement, et leur rang est attribué indépendamment de leur statut.<br><br>Il est possible d'obtenir séparément le <a href='https://app.classement-colleges.fr/?secteur_filter=Public' target='_blank'>classement des collèges publics de France</a> ou bien le <a href='https://app.classement-colleges.fr/?secteur_filter=Privé' target='_blank'>classement des collèges privés de France</a> en sélectionnant le filtre dédié dans l'application."
+        },
+        {
+          "question": "Pourquoi les collèges hors-contrat ne sont-ils pas classés ?",
+          "answer": "Notre classement se base exclusivement sur des données officielles publiées par le Ministère de l'Éducation Nationale sur le portail <a href='https://data.education.gouv.fr' target='_blank'>data.education.gouv.fr</a>. Cette contrainte est essentielle pour garantir la fiabilité, l'objectivité et la transparence de notre classement.<br><br>Les résultats des collèges hors-contrat ne sont pas disponibles dans les fichiers officiels que nous utilisons pour établir notre classement. Même si un établissement hors-contrat nous fournit ses données directement, nous ne pouvons pas les intégrer car nous ne pouvons pas vérifier leur exactitude de manière indépendante."
+        },
+        {
+          "question": "Pourquoi le classement change-t-il ?",
+          "answer": "Le classement est mis à jour lorsque :<br>- De nouvelles données officielles sont publiées sur <a href='https://data.education.gouv.fr' target='_blank'>data.education.gouv.fr</a><br>- Des corrections sont apportées aux données officielles par le Ministère de l'Éducation Nationale<br>- De nouveaux établissements sont ajoutés avec des données complètes"
         }
       ]
     },
@@ -18,20 +26,24 @@
       "questions": [
         {
           "question": "Comment les collèges sont-ils classés ?",
-          "answer": "Le classement des collèges est établi à partir de la moyenne pondérée de trois indicateurs :<br>- Le <strong>taux de réussite</strong>.<br>- La <strong>note à l’écrit</strong>.<br>- Le <strong>taux d’accès de la 6ᵉ à la 3ᵉ</strong>.<br>La pondération appliquée est de 2 pour la note à l’écrit et le taux d’accompagnement, et de 1 pour le taux de réussite.<br> Cette méthode, bien que simple, offre une vue d’ensemble cohérente et factuelle des performances éducatives des établissements."
+          "answer": "Le classement des collèges est établi à partir de la moyenne pondérée de trois indicateurs :<br>- Le <strong>taux de réussite au brevet</strong> (coefficient 1, soit 20% du score)<br>- La <strong>note à l'écrit du brevet</strong> (coefficient 2, soit 40% du score)<br>- Le <strong>taux d'accès de la 6ᵉ à la 3ᵉ</strong> (coefficient 2, soit 40% du score)<br><br>Cette méthode offre une vue d'ensemble cohérente et factuelle des performances éducatives des établissements. Pour plus de détails sur le calcul, consultez notre <a href='/articles/methodologie/' target='_blank'>page méthodologie</a>."
+        },
+        {
+          "question": "Le classement tient-il compte du contexte social ?",
+          "answer": "L'Indice de Position Sociale (IPS) est affiché à titre informatif pour chaque établissement, mais il n'est <strong>pas utilisé dans le calcul du classement</strong>. Le classement se base uniquement sur les trois indicateurs de performance : le taux de réussite au brevet, le taux d'accès 6ème-3ème et la note à l'écrit."
         }
       ]
     },
     {
-      "name": "Données",
+      "name": "Sources et mise à jour",
       "questions": [
         {
           "question": "D'où proviennent vos données ?",
-          "answer": "Toutes nos données proviennent exclusivement des bases de données officielles de l'Éducation Nationale, disponibles sur <a href='https://data.education.gouv.fr' target='_blank'>data.gouv.fr</a>. Nous n'utilisons que des données publiques et vérifiées."
+          "answer": "Toutes nos données proviennent exclusivement des bases de données officielles du Ministère de l'Éducation Nationale, disponibles gratuitement sur le portail <a href='https://data.education.gouv.fr' target='_blank'>data.education.gouv.fr</a>. Nous n'utilisons que des données publiques et vérifiées, notamment :<br>- L'annuaire des établissements<br>- Les résultats du Diplôme National du Brevet (DNB)<br>- Les Indicateurs de Valeur Ajoutée (IVA)<br>- L'Indice de Position Sociale (IPS)"
         },
         {
           "question": "À quelle fréquence les données sont-elles mises à jour ?",
-          "answer": "Les données sont actualisées annuellement, dès que l'Éducation Nationale publie les nouveaux résultats sur <a href='https://data.education.gouv.fr' target='_blank'>data.gouv.fr</a>. La date de dernière mise à jour est toujours indiquée sur notre plateforme.<br> Actuellement, nous présentons le classement des collèges 2025 sur les données 2024."
+          "answer": "Les données sont actualisées annuellement, dès que l'Éducation Nationale publie les nouveaux résultats sur <a href='https://data.education.gouv.fr' target='_blank'>data.education.gouv.fr</a>. La date de dernière mise à jour est toujours indiquée sur notre plateforme.<br><br>Actuellement, nous présentons le classement des collèges 2025 basé sur les données 2024."
         }
       ]
     }
