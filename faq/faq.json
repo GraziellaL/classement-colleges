@@ -26,7 +26,7 @@
       "questions": [
         {
           "question": "Comment les collèges sont-ils classés ?",
-          "answer": "Le classement des collèges est établi à partir de la moyenne pondérée de trois indicateurs :<br>- Le <strong>taux de réussite au brevet</strong> (coefficient 1, soit 20% du score)<br>- La <strong>note à l'écrit du brevet</strong> (coefficient 2, soit 40% du score)<br>- Le <strong>taux d'accès de la 6ᵉ à la 3ᵉ</strong> (coefficient 2, soit 40% du score)<br><br>Cette méthode offre une vue d'ensemble cohérente et factuelle des performances éducatives des établissements. Pour plus de détails sur le calcul, consultez notre <a href='/articles/methodologie/' target='_blank'>page méthodologie</a>."
+          "answer": "Le classement des collèges est établi à partir de la moyenne pondérée de trois indicateurs :<br>- Le <strong>taux de réussite au brevet</strong> (coefficient 1, soit 20% du score), moyenné sur <strong>2021 à 2025</strong><br>- La <strong>note à l'écrit du brevet</strong> (coefficient 2, soit 40% du score), moyennée sur <strong>2022 à 2025</strong><br>- Le <strong>taux d'accès de la 6ᵉ à la 3ᵉ</strong> (coefficient 2, soit 40% du score), moyenné sur <strong>2022 à 2025</strong><br><br>Cette méthode offre une vue d'ensemble cohérente et factuelle des performances éducatives des établissements. Pour plus de détails sur le calcul, consultez notre <a href='/articles/methodologie/' target='_blank'>page méthodologie</a>."
         },
         {
           "question": "Le classement tient-il compte du contexte social ?",
@@ -43,7 +43,7 @@
         },
         {
           "question": "À quelle fréquence les données sont-elles mises à jour ?",
-          "answer": "Les données sont actualisées annuellement, dès que l'Éducation Nationale publie les nouveaux résultats sur <a href='https://data.education.gouv.fr' target='_blank'>data.education.gouv.fr</a>. La date de dernière mise à jour est toujours indiquée sur notre plateforme.<br><br>Actuellement, nous présentons le classement des collèges 2025 basé sur les données 2024."
+          "answer": "Les données sont actualisées annuellement, dès que l'Éducation Nationale publie les nouveaux résultats sur <a href='https://data.education.gouv.fr' target='_blank'>data.education.gouv.fr</a>. La date de dernière mise à jour est toujours indiquée sur notre plateforme.<br><br>Actuellement, nous présentons le <strong>classement 2026</strong>, intégrant notamment les résultats du <strong>brevet 2025</strong> et des moyennes multi-années des indicateurs (détails sur notre <a href='/articles/methodologie/' target='_blank'>page méthodologie</a>)."
         }
       ]
     }
