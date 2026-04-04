@@ -5,7 +5,7 @@
       "questions": [
         {
           "question": "Pourquoi mon collège n'apparaît-il pas dans le classement ?",
-          "answer": "Le classement inclut 6680 collèges, soit la majorité des <a href='https://www.education.gouv.fr/l-education-nationale-en-chiffres-edition-2023-378943' target='_blank'>6980 collèges recensés en France</a>.<br><br>Un établissement peut ne pas apparaître dans notre classement pour plusieurs raisons :<br>- Il n'a pas de données complètes pour au moins un des trois indicateurs utilisés (taux de réussite au brevet, taux d'accès 6ème-3ème, note à l'écrit)<br>- Il a été fermé ou fusionné<br>- Les données officielles ne sont pas disponibles sur le portail data.education.gouv.fr<br>- C'est un collège hors-contrat (voir la question dédiée ci-dessous)<br><br><i>Si votre collège n'est pas listé et que vous pensez qu'il devrait l'être, n'hésitez pas à nous contacter pour vérifier la situation.</i>"
+          "answer": "Le classement inclut 6859 collèges, soit la majorité des <a href='https://www.education.gouv.fr/l-education-nationale-en-chiffres-edition-2023-378943' target='_blank'>6980 collèges recensés en France</a>.<br><br>Un établissement peut ne pas apparaître dans notre classement pour plusieurs raisons :<br>- Il n'a pas de données complètes pour au moins un des trois indicateurs utilisés (taux de réussite au brevet, taux d'accès 6ème-3ème, note à l'écrit)<br>- Il a été fermé ou fusionné<br>- Les données officielles ne sont pas disponibles sur le portail data.education.gouv.fr<br>- C'est un collège hors-contrat (voir la question dédiée ci-dessous)<br><br><i>Si votre collège n'est pas listé et que vous pensez qu'il devrait l'être, n'hésitez pas à nous contacter pour vérifier la situation.</i>"
         },
         {
           "question": "Les établissements privés sont-ils inclus dans le classement ?",
@@ -43,7 +43,7 @@
         },
         {
           "question": "À quelle fréquence les données sont-elles mises à jour ?",
-          "answer": "Les données sont actualisées annuellement, dès que l'Éducation Nationale publie les nouveaux résultats sur <a href='https://data.education.gouv.fr' target='_blank'>data.education.gouv.fr</a>. La date de dernière mise à jour est toujours indiquée sur notre plateforme.<br><br>Actuellement, nous présentons le <strong>classement 2026</strong>, intégrant notamment les résultats du <strong>brevet 2025</strong> et des moyennes multi-années des indicateurs (détails sur notre <a href='/articles/methodologie/' target='_blank'>page méthodologie</a>)."
+          "answer": "Les données sont actualisées annuellement, dès que l'Éducation Nationale publie les nouveaux résultats sur <a href='https://data.education.gouv.fr' target='_blank'>data.education.gouv.fr</a>. La date de dernière mise à jour est toujours indiquée sur notre plateforme.<br><br>Actuellement, nous présentons le classement des collèges 2026 basé sur les données de la session 2025 et des années précédentes."
         }
       ]
     }
